@@ -1,0 +1,17 @@
+import react from 'react'
+
+function Navbar() {
+    return(
+        <div className='Navbar'>
+            <img src="./src/assets/mars.png" />
+            <h1>Bridger Brown</h1>
+            <ul>
+                <li>HOME</li>
+                <li>WORK</li>
+                <li>BIO</li>
+            </ul>
+        </div>
+    )
+}  
+
+export default Navbar

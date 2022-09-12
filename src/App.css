@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Fonts */
+
+h1 {
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+}
+
+/* APP */
+
+.App {
+    background-color: #fff1e3;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* NAVBAR */
+
+.Navbar {
+    height: 100%;
+    width: 20%;
+    background-color: white;   
+    text-align: center;
+}
+
+.Navbar ul {
+    top: 25%;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar li {
+    padding: 0.75rem;
+    padding-left: 0;
+    list-style: none;
+    font-weight: 300;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li:hover {
+    animation: fadeIn 0.75s;
+    background-color: whitesmoke;
+}
+
+@keyframes fadeIn {
+    0% { background-color: transparent;}
+    100% { background-color: whitesmoke;}
+}
+
+.Navbar img {
+    width: 60%;
+    margin-top: 12%;
+}
+
+.Navbar h1 {
+    padding-top: 0.5rem;
+}
+
+/* HOME page */
+
+.Home {
+    width: 100vw;
+}
+
+.Home main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home img {
+    width: 85vw;
+    height: 66vh;
+    object-fit: cover;
+}
+
+.Bio-short {
+    display: flex;
+    background: white;
+    width: 90%;
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+}
+
+.Bio-items {
+    margin-left: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.Bio-short img {
+    height: 100%;
+    object-fit: cover;
+    width: 23rem;    
+}
+
+.Bio-items h2 {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.Bio-items h3 {
+    padding: 0;
+    margin: 1rem 0rem 1rem;
+    font-weight: 400;
+}
+
+.Bio-items p {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.Bio-skills {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Bio-skills li {
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8em;
+    font-weight: 400;    
+    background-color: lightgreen;
+}
+
+.Bio-short button {
+    width: 8rem;
+    font-size: 1em;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    background-color: lightblue;
+    font-family: 'Montserrat', sans-serif;
+}
