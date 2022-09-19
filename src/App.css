@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;    
@@ -16,12 +18,23 @@ h2 {
     font-size: 2em;
 }
 
-p {
-    font-family: 'Lora', serif;
-    line-height: 1.5;
+h3 {
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-/* ~~~~~~ APP ~~~~~~  */
+h4 {
+    font-size: 1.25em;
+    margin: 1rem 0;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+/* ~~~~~~ GENERAL ~~~~~~  */
 
 .App {
     background-color: #fff1e3; 
@@ -31,11 +44,37 @@ p {
     flex-direction: column;
 }
 
+.More {
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    margin: 5rem auto;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.ReadMore {
+    padding: 0.7rem 1rem;
+    width: max-content;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    cursor: pointer;
+}
+
 /* NAVBAR */
 
 .Navbar {
     height: 8%;
-    width: 100%;
+    padding: 0 50px;
     background-color: white;   
     text-align: center;
     display: flex;
@@ -50,7 +89,6 @@ p {
 
 .Navbar ul {
     margin: 0;
-    margin-right: 1rem;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -58,12 +96,11 @@ p {
 }
 
 .Navbar li {
-    margin: 0 0.75rem;
+    margin: 0 0 0 1.75rem;
     list-style: none;
-    font-weight: 400;
-    font-size: 1em;
+    font-weight: 300;
+    font-size: 0.9em;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
 }
 
 li:hover {
@@ -78,16 +115,16 @@ li:hover {
 
 .Navbar img {
     width: 6%;
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 0;
 }
 
 .Navbar h1 {
     font-size: 1.25em;
-    margin-left: 0.75rem;
+    margin-left: 1rem;
 }
 
-/* ~~~~~~ HOME page ~~~~~~ */
+/* ~~~~~~ MAIN section ~~~~~~ */
 
 .Home {
     width: 100%;
@@ -96,32 +133,56 @@ li:hover {
     align-items: center;
 }
 
-.Home img {
+.Main-Image {
     width: 100%;
     height: 95vh;
     object-fit: cover;
 }
 
-.Bio-short {
+.Section-Headers {
+    font-size: 1.7em;
+    padding: 0;
     display: flex;
-    background: white;
-    width: 70%;
-    margin: 15rem 0;
-    padding: 2rem 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.Section-Container {
+    margin: 5rem auto 8rem auto;
+    width: 1000px;
+}
+
+.Headers-Right {
+    justify-content: end;
+}
+
+.Headers-Center {
+    justify-content: center;
+}
+
+/* ~~~~~~ BIO section ~~~~~~ */
+
+.Bio-Container {
+    margin: 5rem auto 8rem auto;
+}
+
+.Bio {
+    width: 900px;
+    display: flex;
+    justify-content: center;
 }
 
 .Bio-items {
-    margin-left: 2rem;
-    width: 60%;
+    margin-right: 3rem;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.Bio-short img {
-    height: 100%;
-    object-fit: cover;
-    width: 23rem;    
+.Bio img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover; 
 }
 
 .Bio-items h2 {
@@ -139,12 +200,14 @@ li:hover {
 
 .Bio-items p {
     padding: 0;
+    margin: 0;
     margin-bottom: 2rem;
 }
 
 .Bio-skills {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -158,11 +221,114 @@ li:hover {
     background-color: lightgreen;
 }
 
-.Bio-short button {
+.Bio button {
     width: 8rem;
     font-size: 1em;
     padding: 0.75rem 0.5rem;
     border: none;
     background-color: lightblue;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ~~~~~~ WORK section ~~~~~~  */
+
+.Work-Preview {
+    width: 580px;
+    height: 360px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Work-Preview:hover {
+    opacity: 0.9;
+}
+
+.Work-Container {
+    display: flex;
+    align-items: center;
+}
+
+.Work-Details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 1rem;
+}
+
+.Work-Details p {
+    text-align: end;
+    padding: 0.75rem 1rem;
+    background-color: aliceblue;
+}
+
+.Work-Details h4 {
+    padding-right: 1rem;
+}
+
+
+/* ~~~~~~ PROJECTS section ~~~~~~  */
+
+.Projects-Container {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.Project-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 0 0;
+}
+
+.Project-Preview {
+    width: 350px;
+    height: 350px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Project-Preview:hover {
+    opacity: 0.9;
+}
+
+.Project-Details {
+    display: flex;
+    flex-direction: column;
+}
+
+.Project-Details p {
+    background-color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+/* CAROUSEL */
+
+.styles-module_carousel-base__3keqD div>button[data-direction=left] {
+    background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50% no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 80px;
+    outline: 0;
+    position: relative;
+    top: 200px;
+    transform: rotate(180deg);
+    margin-right: 1rem;
+}
+
+.styles-module_carousel-base__3keqD div>button[data-direction=right] {
+    background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50% no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 80px;
+    outline: 0;
+    position: relative;
+    top: 200px;
+    margin-left: 1rem;
+}
+
+.Section-Container-Carousel {
+    margin: 5rem auto 8rem auto;
+    width: 1000px;
 }

@@ -9,9 +9,9 @@ function Navbar() {
             </div>
             
             <ul>
-                <li>HOME</li>
-                <li>WORK</li>
-                <li>BIO</li>
+                <li>Home</li>
+                <li>Work</li>
+                <li>Bio</li>
             </ul>
         </div>
     )
