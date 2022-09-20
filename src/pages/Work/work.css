@@ -1,0 +1,69 @@
+.Work-Page {    
+    margin-top: 2rem;
+}
+.Work-Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 10rem;
+}
+
+.Work-Item-Main,
+.Work-Item-Details {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+.Work-Item img {
+    width: 450px;
+    height: 337.50px;
+    border-radius: 4px;
+}
+
+.Item-Description {
+    margin-left: 2rem;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.Work-Item-Details p {
+    margin-right: 2rem;
+}
+
+.Line-Break {
+    margin-top: 1.5rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.Item-Description .Link-Icons {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.Coming-Soon {
+    width: 922px;
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto 5rem auto;
+}
+
+.Coming-Soon h2 {
+    font-size: 1.25em;
+    font-weight: 400;
+    opacity: 0.9;
+    margin: 0;
+}

@@ -10,7 +10,7 @@ function ShortProjects() {
         <div className='Section-Container-Carousel'>
                 <h3 className='Section-Headers'>Projects</h3>
             <div className='Projects-Container'>
-                <Carousel show={1} slide={1} swiping={true} infinite={false} transition={0.2}>
+                <Carousel show={2.5} slide={0.5} swiping={true} infinite={false} transition={0.2}>
                     <NotesProject />
                     <QuizProject />
                     <ThirdProject />

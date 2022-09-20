@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MartiniShot() {
+function MartiniShotShort() {
     return(
       <div className='Work-Container'>
         <img src="./src/assets/galaxy.jpg" alt="martini shot project preview" className='Work-Preview' />
@@ -12,4 +12,4 @@ function MartiniShot() {
     )
 }
 
-export default MartiniShot
+export default MartiniShotShort

@@ -10,19 +10,19 @@ function Navbar() {
             </div>
             
             <ul>
-                <Link to="../src/pages/Home/Home.jsx">
+                <Link to="/home">
                     <li>Home</li>
                 </Link>
 
-                <Link to="../src/pages/Work/Work.jsx">
+                <Link to="/work">
                     <li>Work</li>
                 </Link>
 
-                <Link to="../src/pages/Projects/Projects.jsx">
+                <Link to="/projects">
                     <li>Projects</li>
                 </Link>
 
-                <Link to="../src/pages/Bio/Bio.jsx">
+                <Link to="/bio">
                     <li>Bio</li>
                 </Link>
             </ul>

@@ -22,11 +22,25 @@
 }
 
 .Navbar li {
-    margin: 0 0 0 1.75rem;
+    margin: 0;
     list-style: none;
     font-weight: 300;
     font-size: 0.9em;
     cursor: pointer;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    margin-left: 0.9rem;
+}
+
+a:active,
+a::after,
+a:focus,
+a:target {
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
 }
 
 li:hover {
