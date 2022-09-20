@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;    
     font-family: 'Roboto Mono', monospace;
+    background-color: white;
 }
 
 /* Fonts */
@@ -37,7 +38,6 @@ p {
 /* ~~~~~~ GENERAL ~~~~~~  */
 
 .App {
-    background-color: #fff1e3; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -70,73 +70,11 @@ p {
     cursor: pointer;
 }
 
-/* NAVBAR */
-
-.Navbar {
-    height: 8%;
-    padding: 0 50px;
-    background-color: white;   
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Navbar-heading {
-    display: flex;
-    align-items: center;
-}
-
-.Navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.Navbar li {
-    margin: 0 0 0 1.75rem;
-    list-style: none;
-    font-weight: 300;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-li:hover {
-    animation: fadeIn 0.75s;
-    background-color: whitesmoke;
-}
-
-@keyframes fadeIn {
-    0% { background-color: transparent;}
-    100% { background-color: whitesmoke;}
-}
-
-.Navbar img {
-    width: 6%;
-    margin: 1rem 0;
-    padding: 0;
-}
-
-.Navbar h1 {
-    font-size: 1.25em;
-    margin-left: 1rem;
-}
-
-/* ~~~~~~ MAIN section ~~~~~~ */
-
 .Home {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.Main-Image {
-    width: 100%;
-    height: 95vh;
-    object-fit: cover;
 }
 
 .Section-Headers {
@@ -158,7 +96,40 @@ li:hover {
 .Headers-Center {
     justify-content: center;
 }
+/* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
+.Landing-Page {
+    height: 1000px;
+    width: 100vw;
+}
+
+.Landing-Page img {
+    height: 1000px;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.Landing-Text {
+    position: absolute;
+    left: 15%;
+    top: 33%;
+    color: black;
+    opacity: 0.8;
+}
+
+.Landing-Text h1 {
+    font-size: 5em;
+    padding: 0;
+    margin: 0 auto 1rem auto;
+}
+
+.Landing-Text h2 {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
 /* ~~~~~~ BIO section ~~~~~~ */
 
 .Bio-Container {
@@ -271,7 +242,7 @@ li:hover {
 
 .Projects-Container {
     display: flex;
-    flex-wrap: wrap;
+    width: 1000px;
 } 
 
 .Project-Container {
@@ -330,5 +301,34 @@ li:hover {
 
 .Section-Container-Carousel {
     margin: 5rem auto 8rem auto;
-    width: 1000px;
+    width: 1056px;
+}
+
+/* ~~~~~~ FOOTER ~~~~~~  */
+
+.Footer {
+    margin: 5rem auto 2rem auto;
+}
+
+.Footer h5 {
+    font-weight: 300;
+    margin: 0.8rem auto;
+}
+
+.Footer-Icons {
+    display: flex;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.Social-Icons {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 0 0.3rem;
+}
+
+.Social-Icons:hover {
+    opacity: 0.7;
 }
