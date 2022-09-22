@@ -6,7 +6,6 @@ function Navbar() {
     return(
         <div className='Navbar'>
             <div className='Navbar-heading'>
-                <img src="./src/assets/mars.png" />
             </div>
             
             <ul>

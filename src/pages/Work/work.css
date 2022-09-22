@@ -1,5 +1,6 @@
 .Work-Page {    
     margin-top: 2rem;
+    color: black
 }
 .Work-Item {
     display: flex;
@@ -25,8 +26,8 @@
     padding: 0;
 }
 
-h1 {
-    font-size: 1.75em;
+.Work-Item h1 {
+    font-size: 3em;
     margin: 0;
 }
 
@@ -67,3 +68,4 @@ h4 {
     opacity: 0.9;
     margin: 0;
 }
+

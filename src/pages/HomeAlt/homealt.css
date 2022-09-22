@@ -1,0 +1,52 @@
+body {
+    background-color: #101010;
+}
+
+.Home-Alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 47%;
+    left: 47%;
+    transform: translate(-47%, -47%);
+}
+
+img {
+    width: 30vw;
+}
+
+h1 {
+    font-size: 12vw;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: -1.5rem;
+    display: flex;
+    color: #e5e2dc;
+}
+
+.Shadow-Headline {
+    position: absolute;
+    top: 16.4%;
+    left: -0.5%;
+    opacity: 0.3;
+}
+
+.Title {
+    display: flex;
+}
+
+.Home-Text {
+    margin-right: 3rem;
+    margin-bottom: 6rem;
+}
+
+span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.2vw; 
+    position: relative;
+    top: 66%;
+    left: 0.2rem;
+    color: #efdcc9;
+}
