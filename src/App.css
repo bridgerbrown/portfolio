@@ -103,12 +103,12 @@ p {
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
-    height: 1000px;
+    height: 100vh;
     width: 100vw;
 }
 
 .Landing-Page img {
-    height: 1000px;
+    height: 100vh;
     width: 100vw;
     object-fit: cover;
     z-index: -1;
@@ -124,7 +124,7 @@ p {
 }
 
 .Landing-Text h1 {
-    font-size: 5em;
+    font-size: 4em;
     padding: 0;
     margin: 0 auto 1rem auto;
 }

@@ -22,6 +22,7 @@ function Navbar() {
                         <li>Bio</li>
                     </Link>
                 </ul>
+                <button>Resume</button>
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import ShortProjects from "./ShortProjects";
 import LandingPage from "./LandingPage";
 import HomeNav from './HomeNav/HomeNav'
 import Skills from "./Skills";
+import Footer from './Footer'
 
 function Home() {
     return(
@@ -14,6 +15,7 @@ function Home() {
             <ShortBio />
             <Skills />
             <ShortWork />
+            <Footer />
         </div>
     )
 }
