@@ -2,7 +2,7 @@ import React from 'react'
 
 function MartiniShotShort() {
     return(
-      <div className='Work-Container'>
+      <div className='project-single-container'>
         <img src="./src/assets/galaxy.jpg" alt="martini shot project preview" className='Work-Preview' />
         <div className='Work-Details'>
           <h4>Martini Shot website</h4>

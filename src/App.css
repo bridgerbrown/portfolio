@@ -44,6 +44,10 @@ p {
     flex-direction: column;
 }
 
+.section-space {
+    margin: 8rem auto 10rem auto;
+}
+
 .More {
     padding: 0.7rem 1rem;
     border: none;
@@ -51,7 +55,7 @@ p {
     color: white;
     border-radius: 4px;
     display: flex;
-    margin: 5rem auto;
+    margin: 2rem auto;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     cursor: pointer;
@@ -78,15 +82,15 @@ p {
 }
 
 .Section-Headers {
-    font-size: 1.7em;
+    font-size: 2em;
     padding: 0;
     display: flex;
-    margin-bottom: 3.5rem;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .Section-Container {
-    margin: 5rem auto 8rem auto;
-    width: 1000px;
+    margin: 5rem auto 10rem auto;
 }
 
 .Headers-Right {
@@ -132,18 +136,14 @@ p {
 }
 /* ~~~~~~ BIO section ~~~~~~ */
 
-.Bio-Container {
-    margin: 5rem auto 8rem auto;
-}
-
 .Bio {
-    width: 900px;
+    width: 85vw;
     display: flex;
     justify-content: center;
 }
 
 .Bio-items {
-    margin-right: 3rem;
+    margin-left: 3rem;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -151,8 +151,8 @@ p {
 }
 
 .Bio img {
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
     object-fit: cover; 
 }
 
@@ -170,6 +170,8 @@ p {
 }
 
 .Bio-items p {
+    font-size: 1em;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     margin-bottom: 2rem;
@@ -205,8 +207,8 @@ p {
 /* ~~~~~~ WORK section ~~~~~~  */
 
 .Work-Preview {
-    width: 580px;
-    height: 360px;
+    width: 480px;
+    height: 260px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -216,8 +218,10 @@ p {
 }
 
 .Work-Container {
+    width: 85vw;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .Work-Details {
@@ -237,6 +241,11 @@ p {
     padding-right: 1rem;
 }
 
+.project-single-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
 
 /* ~~~~~~ PROJECTS section ~~~~~~  */
 
