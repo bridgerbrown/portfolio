@@ -2,15 +2,21 @@ import React from 'react'
 
 function ShortBio() {
     return(
-        <div className='Bio-Container section-space'>
+        <div className='Bio-Container'>
             <h3 className='Section-Headers'>About</h3>
             <div className="Bio">  
-            <img src="./src/assets/B-cortona.jpg" alt="bridger-headshot" />
+                <img src="./src/assets/B-cortona.png" alt="bridger-headshot" />
                 <div className="Bio-items">                    
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic harum laudantium corrupti optio, itaque quis aut quam quae repellendus ad natus nostrum, obcaecati perspiciatis cumque sit eveniet. Magni, fugiat similique? Architecto, deserunt alias earum sapiente, hic sunt dolore eius corporis labore repudiandae neque voluptates aperiam exercitationem esse? Et quaerat facere laborum, quos voluptatum nobis veritatis. Reiciendis doloribus eum atque nulla?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic harum laudantium corrupti optio, itaque quis aut quam quae repellendus ad natus nostrum, obcaecati perspiciatis cumque sit eveniet. Magni, fugiat similique? Architecto, deserunt alias earum sapiente, hic sunt dolore eius corporis labore repudiandae neque voluptates aperiam exercitationem esse? Et quaerat facere laborum, quos voluptatum nobis veritatis. Reiciendis doloribus eum atque nulla?</p>
-                </div>  
+                    <p>Hello, my name is Bridger Brown and I am a Front-End Web developer based out of Portland, Oregon. 
+                        I have experience in Graphic Design which allows me to see websites from a designers mindset.
+                        <br></br>
+                        <br></br>
+                        I am also a musician who graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
+                        I have a lot of passion for music, art, design, and self-improvement.
+                    </p>
+                </div> 
             </div>
+            <button>Resume</button> 
         </div>
     )
 }

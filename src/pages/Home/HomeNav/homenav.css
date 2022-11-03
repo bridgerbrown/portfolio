@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .navbar-items {
@@ -39,11 +41,15 @@
 
 .Navbar li {
     margin: 0;
+    padding-bottom: 0.25rem;
     list-style: none;
-    font-weight: 300;
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     cursor: pointer;
-    color: black;
+    color: white;
+    width:min-content;
 }
 
 a:link {
@@ -51,10 +57,10 @@ a:link {
     margin-right: 1.5rem;
 }
 
-a:active,
-a::after,
-a:focus,
-a:target {
+li:active,
+li::after,
+li:focus,
+li:target {
     border-bottom: 3px solid #e5e2dc;
     margin-bottom: -3px;
 }

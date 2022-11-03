@@ -6,6 +6,7 @@ import LandingPage from "./LandingPage";
 import HomeNav from './HomeNav/HomeNav'
 import Skills from "./Skills";
 import Footer from './Footer'
+import HomeLanding from "../HomeLanding";
 
 function Home() {
     return(

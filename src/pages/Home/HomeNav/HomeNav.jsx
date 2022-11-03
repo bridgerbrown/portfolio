@@ -6,12 +6,11 @@ function Navbar() {
     return(
         <div className='Navbar'>
             <div className='Navbar-heading'>
-                <h1>bridger.dev</h1>
             </div>
             <div className='navbar-items'>
                 <ul>
-                    <Link to="/work">
-                        <li>Work</li>
+                    <Link to="/home">
+                        <li>Home</li>
                     </Link>
 
                     <Link to="/projects">
@@ -19,10 +18,13 @@ function Navbar() {
                     </Link>
 
                     <Link to="/bio">
-                        <li>Bio</li>
+                        <li>About</li>
+                    </Link>
+
+                    <Link to="/bio">
+                        <li>Contact</li>
                     </Link>
                 </ul>
-                <button>Resume</button>
             </div>
         </div>
     )
