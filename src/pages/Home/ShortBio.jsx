@@ -16,7 +16,7 @@ function ShortBio() {
                     </p>
                 </div> 
             </div>
-            <button>Resume</button> 
+            <button className='readmore'>Resume</button> 
         </div>
     )
 }

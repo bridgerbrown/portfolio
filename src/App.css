@@ -5,7 +5,7 @@ body {
     padding: 0;    
     background-color: black;
     color: white;
-    font-family: 'Roboto';
+    font-family: 'HelveticaNowDisplay';
 }
 
 /* Fonts */
@@ -55,7 +55,6 @@ p {
     border-radius: 4px;
     display: flex;
     margin: 2rem auto;
-    font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     cursor: pointer;
 }
@@ -68,7 +67,6 @@ p {
     color: white;
     border-radius: 4px;
     display: flex;
-    font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     cursor: pointer;
 }
@@ -93,7 +91,7 @@ p {
 }
 
 .Section-Container {
-    margin: 5rem auto 10rem auto;
+    margin: 10rem auto 10rem auto;
 }
 
 .Headers-Right {
@@ -191,26 +189,26 @@ p {
     margin-bottom: 2rem;
 }
 
-.Bio-Container button {
+.readmore {
     font-size: 1em;
     padding: 0.75rem 1.25rem;
     border: 1px solid lightgreen;
     border-radius: 2px;
     color: lightgreen;
     background-color: rgba(144, 238, 144, 0.151);
-    font-family: 'Roboto';
 }
 
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
 .skills-container {
     height: 50vh;
-    width: 70vw;
+    width: 80vw;
 }
 
 .skill-icons {
-    font-size: 4em;
+    font-size: 3.75em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -224,14 +222,15 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 3rem;
+    margin: 1rem 5rem;
 }
+
 
 /* ~~~~~~ WORK section ~~~~~~  */
 
 .Work-Preview {
-    width: 480px;
-    height: 260px;
+    width: 430px;
+    height: 310px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -241,7 +240,7 @@ p {
 }
 
 .Work-Container {
-    width: 80vw;
+    width: 95vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -251,24 +250,38 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: 1rem;
+    width: 40vw;
+    font-size: 1.4em;
 }
 
 .Work-Details p {
     text-align: end;
     padding: 0.75rem 1rem;
-    color: black;
-    background-color: aliceblue;
+    font-weight: 400;
+    width: 85%;
+    margin-top: 0;
 }
 
 .Work-Details h4 {
     padding-right: 1rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .project-single-container {
     display: flex;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
+}
+
+.project-single-container button {
+    font-size: 0.6em;
+    padding: 0.75rem;
+    border: 1px solid lightgreen;
+    border-radius: 2px;
+    color: lightgreen;
+    background-color: rgba(144, 238, 144, 0.151);
 }
 
 /* ~~~~~~ PROJECTS section ~~~~~~  */
@@ -435,3 +448,105 @@ li:active {
     border-bottom: 3px solid #e5e2dc;
     margin-bottom: -3px;
 } */
+
+
+/* ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~  */
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-black/HelveticaNowDisplay-Black.eot');
+    src: url('fonts/hnow-black/HelveticaNowDisplay-Black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-black/HelveticaNowDisplay-Black.woff') format('woff'),
+         url('fonts/hnow-black/HelveticaNowDisplay-Black.ttf') format('truetype'),
+         url('fonts/hnow-black/HelveticaNowDisplay-Black.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-bold/HelveticaNowDisplay-Bold.eot');
+    src: url('fonts/hnow-bold/HelveticaNowDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-bold/HelveticaNowDisplay-Bold.woff') format('woff'),
+         url('fonts/hnow-bold/HelveticaNowDisplay-Bold.ttf') format('truetype'),
+         url('fonts/hnow-bold/HelveticaNowDisplay-Bold.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-extrablack/HelveticaNowDisplay-ExtBlack.eot');
+    src: url('fonts/hnow-extrablack/HelveticaNowDisplay-ExtBlack.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-extrablack/HelveticaNowDisplay-ExtBlack.woff') format('woff'),
+         url('fonts/hnow-extrablack/HelveticaNowDisplay-ExtBlack.ttf') format('truetype'),
+         url('fonts/hnow-extrablack/HelveticaNowDisplay-ExtBlack.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-extrabold/HelveticaNowDisplay-ExtraBold.eot');
+    src: url('fonts/hnow-extrabold/HelveticaNowDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-extrabold/HelveticaNowDisplay-ExtraBold.woff') format('woff'),
+         url('fonts/hnow-extrabold/HelveticaNowDisplay-ExtraBold.ttf') format('truetype'),
+         url('fonts/hnow-extrabold/HelveticaNowDisplay-ExtraBold.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-medium/HelveticaNowDisplay-Medium.eot');
+    src: url('fonts/hnow-medium/HelveticaNowDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-medium/HelveticaNowDisplay-Medium.woff') format('woff'),
+         url('fonts/hnow-medium/HelveticaNowDisplay-Medium.ttf') format('truetype'),
+         url('fonts/hnow-medium/HelveticaNowDisplay-Medium.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-light/HelveticaNowDisplay-Light.eot');
+    src: url('fonts/hnow-light/HelveticaNowDisplay-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-light/HelveticaNowDisplay-Light.woff') format('woff'),
+         url('fonts/hnow-light/HelveticaNowDisplay-Light.ttf') format('truetype'),
+         url('fonts/hnow-light/HelveticaNowDisplay-Light.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-extralight/HelveticaNowDisplay-ExtLt.eot');
+    src: url('fonts/hnow-extralight/HelveticaNowDisplay-ExtLt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-extralight/HelveticaNowDisplay-ExtLt.woff') format('woff'),
+         url('fonts/hnow-extralight/HelveticaNowDisplay-ExtLt.ttf') format('truetype'),
+         url('fonts/hnow-extralight/HelveticaNowDisplay-ExtLt.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-thin/HelveticaNowDisplay-Thin.eot');
+    src: url('fonts/hnow-thin/HelveticaNowDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-thin/HelveticaNowDisplay-Thin.woff') format('woff'),
+         url('fonts/hnow-thin/HelveticaNowDisplay-Thin.ttf') format('truetype'),
+         url('fonts/hnow-thin/HelveticaNowDisplay-Thin.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('fonts/hnow-hairline/HelveticaNowDisplay-Hairline.eot');
+    src: url('fonts/hnow-hairline/HelveticaNowDisplay-Hairline.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hnow-hairline/HelveticaNowDisplay-Hairline.woff') format('woff'),
+         url('fonts/hnow-hairline/HelveticaNowDisplay-Hairline.ttf') format('truetype'),
+         url('fonts/hnow-hairline/HelveticaNowDisplay-Hairline.svg#HelveticaNowDisplay') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}

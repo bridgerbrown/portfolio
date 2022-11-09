@@ -18,7 +18,7 @@ function WorkItem(props) {
                 <p>{details}</p>
                 <img src={image2} alt={alt2} />
             </div>
-            <div className='Line-Break'></div>
+            <button>More</button>
         </div>
     )
 }
