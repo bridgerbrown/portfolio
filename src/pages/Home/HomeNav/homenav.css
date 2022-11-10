@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .navbar-items {
@@ -48,7 +48,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     cursor: pointer;
-    color: white;
+    color: black;
     width:min-content;
 }
 
@@ -61,17 +61,17 @@ li:active,
 li::after,
 li:focus,
 li:target {
-    border-bottom: 3px solid #e5e2dc;
+    border-bottom: 3px solid rgb(189, 34, 34);
     margin-bottom: -3px;
 }
 
 li:hover {
-    border-bottom: 3px solid #e5e2dc;
+    border-bottom: 3px solid rgb(189, 34, 34);
     margin-bottom: -3px;
 }
 
 li:active {
-    border-bottom: 3px solid #e5e2dc;
+    border-bottom: 3px solid rgb(189, 34, 34);
     margin-bottom: -3px;
 }
 
