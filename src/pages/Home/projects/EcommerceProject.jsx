@@ -1,16 +1,16 @@
 import React from 'react'
 
-function ThirdProject() {
+function EcommerceProject() {
     return(
         <div className='project-single-container'>
             <img src='./src/assets/mars_bg.jpg' alt="quiz Work preview" className='Work-Preview'/>
             <div className='Work-Details'>
-                <h4>Third Project</h4>
-                <p>Lm, nam rerum deleerum deleniti sunt magnerum deleniti sunt magnerum deleniti sunt magnerum deleniti sunt magnerum deleniti sunt magnniti sunt magni corporis.</p>
+                <h4>eCommerce app</h4>
+                <p>Lorem, iping elit. Aperiam, nam rerum deleniti sunt magni corporis.</p>
                 <button className='ReadMore'>Read More</button>
             </div>
         </div>
     )
 }
 
-export default ThirdProject
+export default EcommerceProject

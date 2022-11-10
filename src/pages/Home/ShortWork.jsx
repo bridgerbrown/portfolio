@@ -1,16 +1,20 @@
 import React from 'react'
-import MartiniShotShort from './work-short/MartiniShotShort'
+import EcommerceProject from './projects/EcommerceProject'
+import QuizProject from './projects/QuizProject'
+import ThirdProject from './projects/ThirdProject'
 
 function ShortWork() {
     return(
         <div className='Section-Container section-space'>
             <h3 className='Section-Headers'>Projects</h3>
             <div className='Work-Container'>
-                <MartiniShotShort />
-                <MartiniShotShort />
-                <MartiniShotShort />
+                <EcommerceProject />
+                <QuizProject />
+                <ThirdProject />
             </div>
-            <button className='More'>Work</button>
+            <div className='coming-soon'>
+                <h3>More coming soon...</h3>
+            </div>
         </div>
     )
 }

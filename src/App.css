@@ -180,7 +180,7 @@ p {
 }
 
 .Bio-items p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 1.25px;
     line-height: 1.6;
@@ -201,7 +201,7 @@ p {
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
 .skills-container {
-    height: 50vh;
+    height: 65vh;
     width: 80vw;
 }
 
@@ -282,6 +282,14 @@ p {
     border-radius: 2px;
     color: lightgreen;
     background-color: rgba(144, 238, 144, 0.151);
+}
+
+.coming-soon h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem auto;
+    opacity: 0.9;
 }
 
 /* ~~~~~~ PROJECTS section ~~~~~~  */
