@@ -1,12 +1,17 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom"
-import '../App.css'
 
-function HomeLandNav() {
+function Navbar() {
     return(
-        <div>
-            <div className='homeland-nav'>
+        <div className='Navbar'>
+            <div className='Navbar-heading'>
+            </div>
+            <div className='navbar-items'>
                 <ul>
+                    <Link to="/home">
+                        <li>Home</li>
+                    </Link>
+
                     <Link to="/projects">
                         <li>Projects</li>
                     </Link>
@@ -19,10 +24,9 @@ function HomeLandNav() {
                         <li>Contact</li>
                     </Link>
                 </ul>
-                <button>Resume</button>
             </div>
         </div>
     )
-}
+}  
 
-export default HomeLandNav
+export default Navbar

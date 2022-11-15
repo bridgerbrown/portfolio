@@ -107,6 +107,98 @@ button {
 .Headers-Center {
     justify-content: center;
 }
+
+/* ~~~~~~ NAVBAR ~~~~~~ */
+
+
+.Navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navbar-items button {
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgb(73, 123, 73);
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: rgb(73, 123, 73);
+}
+
+.Navbar-heading {
+    display: flex;
+}
+
+.Navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navbar li {
+    margin: 0;
+    padding-bottom: 0.25rem;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    width:min-content;
+}
+
+a:link {
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+li:active,
+li::after,
+li:focus,
+li:target {
+    border-bottom: 3px solid rgb(189, 34, 34);
+    margin-bottom: -3px;
+}
+
+li:hover {
+    border-bottom: 3px solid rgb(189, 34, 34);
+    margin-bottom: -3px;
+}
+
+li:active {
+    border-bottom: 3px solid rgb(189, 34, 34);
+    margin-bottom: -3px;
+}
+
+.Navbar img {
+    width: 7%;
+    margin: 0.8rem 0;
+    padding: 0;
+}
+
+.Navbar h1 {
+    font-size: 1.25em;
+    margin-left: 2rem;
+}
+
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
@@ -129,21 +221,36 @@ button {
 }
 
 .Landing-Text h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     letter-spacing: 2px;
     padding: 0;
     margin: 0 auto 1rem auto;
     font-weight: 500;
-    text-transform: uppercase;
+    animation: left-to-right 1s ease-in-out forwards;
     border-bottom: 7px solid rgb(189, 34, 34);
 }
 
 .Landing-Text h2 {
     font-weight: 300;
-    font-size: 2.25em;
+    font-size: 2em;
     margin: 0;
     padding: 0;
+    animation: left-to-right 1s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 /* ~~~~~~ BIO section ~~~~~~ */
 
 .Bio-Container {
@@ -273,11 +380,10 @@ button {
 .Work-Details h4 {
     margin: 0;
     padding-right: 1rem;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .project-single-container {
@@ -398,77 +504,6 @@ button {
     opacity: 0.7;
 }
 
-/* ~~~~~~ HOMELAND ~~~~~~  */
-/* 
-.homeland-container {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.homeland-text {
-    margin: 1.5rem 3.25rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.homeland-text h1 {
-    font-size: 5vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
-}
-
-.homeland-text h3 {
-    font-size: 24px;
-    font-weight: 100;
-    padding: 0;
-    margin-top: 1.3rem;
-    margin-bottom: 0;
-}
-
-.homeland-text p {
-    font-size: 14px;
-    padding: 0;
-    margin-top: 2rem;
-}
-
-.homeland-nav li {
-    font-size: 18px;
-    font-weight: 300;
-    color: rgb(23, 23, 23);
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width:min-content;
-}
-
-.homeland-nav ul {
-    margin: 2rem auto;
-    padding: 0;
-}
-
-li:active,
-li::after,
-li:focus,
-li:target {
-    border-bottom: 3px solid #e5e2dc;
-    margin-bottom: -3px;
-}
-
-li:hover {
-    border-bottom: 3px solid #e5e2dc;
-    margin-bottom: -3px;
-}
-
-li:active {
-    border-bottom: 3px solid #e5e2dc;
-    margin-bottom: -3px;
-} */
-
-
 /* ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~  */
 
 @font-face {
@@ -569,3 +604,17 @@ li:active {
     font-weight: 100;
     font-style: normal;
 }
+
+/* ~~~~~~~~~~~~ Animations ~~~~~~~~~~~~  */
+
+.reveal-left {
+    position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1.5s ease-in-out;  
+}
+
+.reveal-left.active{
+    transform: translateX(0);
+    opacity: 1;
+  }

@@ -1,10 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import Home from './pages/Home/Home.jsx'
-import Bio from './pages/Bio/Bio'
-import Projects from './pages/Projects/Projects'
-import Work from './pages/Work/Work'
+import Home from './Sections/Home.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,9 +10,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />}>
             <Route path="home" element={<Home />} />
-            <Route path="work" element={<Work />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="bio" element={<Bio />} />
+            <Route path="work" element={<Home />} />
+            <Route path="projects" element={<Home />} />
+            <Route path="bio" element={<Home />} />
             <Route
               path="*"
               element={

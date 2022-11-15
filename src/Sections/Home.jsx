@@ -1,8 +1,8 @@
 import React from "react";
-import ShortBio from "./ShortBio";
-import ShortWork from "./ShortWork";
-import LandingPage from "./LandingPage";
-import HomeNav from './HomeNav/HomeNav'
+import About from "./About";
+import Projects from "./Projects";
+import Landing from "./Landing";
+import HomeNav from './Navbar'
 import Skills from "./Skills";
 import Footer from './Footer'
 
@@ -10,10 +10,10 @@ function Home() {
     return(
         <div className="Home">
             <HomeNav />
-            <LandingPage />
-            <ShortBio />
+            <Landing />
+            <About />
             <Skills />
-            <ShortWork />
+            <Projects />
             <Footer />
         </div>
     )

@@ -3,7 +3,7 @@ import EcommerceProject from './projects/EcommerceProject'
 import QuizProject from './projects/QuizProject'
 import ThirdProject from './projects/ThirdProject'
 
-function ShortWork() {
+function Projects() {
     return(
         <div className='Section-Container section-space'>
             <h3 className='Section-Headers'>Projects</h3>
@@ -19,4 +19,4 @@ function ShortWork() {
     )
 }
 
-export default ShortWork
+export default Projects
