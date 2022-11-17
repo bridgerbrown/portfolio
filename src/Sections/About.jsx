@@ -1,21 +1,39 @@
 import React from 'react'
 
 function About() {
-    function reveal() {
-        var reveals = document.querySelectorAll(".reveal-left");
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
+    function revealLeft() {
+        let reveals = document.querySelectorAll(".reveal-left");
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 150;
           if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
           }
         }
       }
 
-      window.addEventListener("scroll", reveal)
+      function revealRight() {
+        let reveals = document.querySelectorAll(".reveal-right");
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
 
-      reveal()
+      window.addEventListener("scroll", revealLeft)
+      window.addEventListener("scroll", revealRight)
+
+      revealLeft()
+      revealRight()
 
     return(
         <div className='Bio-Container'>
@@ -30,9 +48,14 @@ function About() {
                         I am also a musician who graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
                         I have a lot of passion for music, art, design, and self-improvement.
                     </p>
+                    <div className='resume-section'>
+                      <img src="../src/assets/LinkedIN_black.png" alt="LinkedIN icon" className='Social-Icons'/>
+                      <img src="../src/assets/Github_black.png" alt="Github icon"className='Social-Icons'/>
+                      <img src="../src/assets/Instagram_black.png" alt="Instagram icon"className='Social-Icons'/>
+                      <button>Resume</button>
+                    </div>
                 </div> 
             </div>
-            <button className='readmore'>Resume</button> 
         </div>
     )
 }

@@ -295,7 +295,7 @@ li:active {
 }
 
 .Bio-items p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
     letter-spacing: 1.25px;
     line-height: 1.6;
@@ -305,12 +305,52 @@ li:active {
 }
 
 .readmore {
+    width: 7rem;
     font-size: 1em;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1rem;
     border: 1px solid gray;
     border-radius: 2px;
     color: gray;
     background-color: rgba(144, 238, 144, 0.151);
+}
+
+.resume {
+    width: 7rem;
+    font-size: 1em;
+    padding: 0.75rem 1rem;
+    border: 1px solid gray;
+    border-radius: 2px;
+    color: gray;
+    background-color: rgba(144, 238, 144, 0.151);
+}
+
+.resume-section {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-section img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.resume-section img,
+.resume-section button {
+    margin: 0 1.5rem;
+}
+
+.resume-section button {
+    width: 5.5rem;
+    height: 2.5rem;
+    font-size: 0.8em;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.resume-section button:hover {
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
 }
 
 /* ~~~~~~ SKILLS section ~~~~~~  */
@@ -318,6 +358,7 @@ li:active {
 .skills-container {
     height: 65vh;
     width: 80vw;
+    margin-bottom: 5rem;
 }
 
 .skill-icons {
@@ -402,7 +443,7 @@ li:active {
 }
 
 .coming-soon h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 400;
     text-align: center;
     margin: 2rem auto;
@@ -611,10 +652,22 @@ li:active {
     position: relative;
   transform: translateX(-150px);
   opacity: 0;
-  transition: 1.5s ease-in-out;  
+  transition: 1s ease-in-out;  
 }
 
 .reveal-left.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal-right {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s ease-in-out;  
+}
+
+.reveal-right.active{
     transform: translateX(0);
     opacity: 1;
   }
