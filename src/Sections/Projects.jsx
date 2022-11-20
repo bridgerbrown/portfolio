@@ -5,7 +5,7 @@ import ThirdProject from './projects/ThirdProject'
 
 function Projects() {
     return(
-        <div className='Section-Container section-space'>
+        <div className='Section-Container section-space' id="projects">
             <h3 className='Section-Headers'>Projects</h3>
             <div className='Work-Container'>
                 <EcommerceProject />

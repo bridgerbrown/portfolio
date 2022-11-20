@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -85,7 +87,7 @@ button {
 }
 
 .Section-Headers {
-    font-size: 2.25em;
+    font-size: 1.75em;
     font-weight: 500;
     letter-spacing: 3px;
     border-bottom: 5px solid rgb(189, 34, 34);
@@ -357,8 +359,8 @@ li:active {
 
 .skills-container {
     height: 65vh;
-    width: 80vw;
-    margin-bottom: 5rem;
+    width: 75vw;
+    margin-bottom: 2rem;
 }
 
 .skill-icons {
@@ -516,6 +518,44 @@ li:active {
     width: 1056px;
 }
 
+/* ~~~~~~ CONTACT ~~~~~~  */
+
+.contact-container {
+    margin: 10rem auto;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-items h2 {
+    margin: 0.5rem auto;
+    padding: 0;
+}
+
+.contact-items p {
+    margin-bottom: 2rem;
+    font-size: 1em;
+}
+
+.contact-items button {
+    margin: 1rem auto;
+    width: 7rem;
+    height: 3rem;
+    font-size: 0.8em;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contact-items button:hover {
+    background-color: rgb(242, 242, 242); 
+}
+
 /* ~~~~~~ FOOTER ~~~~~~  */
 
 .Footer {
@@ -671,3 +711,4 @@ li:active {
     transform: translateX(0);
     opacity: 1;
   }
+

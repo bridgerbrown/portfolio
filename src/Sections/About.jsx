@@ -36,7 +36,7 @@ function About() {
       revealRight()
 
     return(
-        <div className='Bio-Container'>
+        <div className='Bio-Container' id="bio">
             <h3 className='Section-Headers'>About</h3>
             <div className="Bio">  
                 <img src="./src/assets/B-cortona.png" alt="bridger-headshot" class="reveal-left"/>

@@ -8,19 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}>
-            <Route path="home" element={<Home />} />
-            <Route path="work" element={<Home />} />
-            <Route path="projects" element={<Home />} />
-            <Route path="bio" element={<Home />} />
-            <Route
-              path="*"
-              element={
-                <main style={{ padding: "1rem" }}>
-                  <p>There's nothing here!</p>
-                </main>
-              }
-            />
+          <Route path="/" element={<Home />}>
           </Route>
         </Routes>
       </BrowserRouter>
