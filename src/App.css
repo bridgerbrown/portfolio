@@ -334,7 +334,7 @@ li:active {
 
 .resume-section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .resume-section img {
@@ -344,7 +344,7 @@ li:active {
 
 .resume-section img,
 .resume-section button {
-    margin: 0 1.5rem;
+    margin-right: 2rem;
 }
 
 .resume-section button {
