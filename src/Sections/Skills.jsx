@@ -34,6 +34,10 @@ function Skills() {
                     <p>GIT</p>
                 </div>
                 <div className="skill">       
+                    <i class="devicon-wordpress-plain"></i>
+                    <p>WORDPRESS</p>
+                </div>
+                <div className="skill">       
                     <i class="devicon-firebase-plain"></i>
                     <p>FIREBASE</p>
                 </div>

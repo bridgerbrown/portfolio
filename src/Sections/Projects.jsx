@@ -14,7 +14,6 @@ function Projects() {
             <div className='Work-Container'>
                 <EcommerceProject />
                 <QuizProject />
-                <ThirdProject />
             </div>
             <div className='coming-soon'>
                 <h3>More coming soon...</h3>

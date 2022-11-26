@@ -43,14 +43,15 @@ function About() {
               <img src="./src/assets/star1.png" className='swirls'/>
             </div>
             <div className="Bio">  
-                <img src="./src/assets/B-cortona.png" alt="bridger-headshot" class="reveal-left"/>
+                <img src="./src/assets/B-cortona-gray.png" alt="bridger-headshot" class="reveal-left"/>
                 <div className="Bio-items reveal-right">                    
                     <p>Hello, my name is Bridger Brown and I am a Front-End Web developer based out of Portland, Oregon. 
                         I have experience in Graphic Design which allows me to see websites from a designers mindset.
+                        Websites are an interactive art form and I am passionate about creating that experience.
                         <br></br>
                         <br></br>
-                        I am also a musician who graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
-                        I have a lot of passion for music, art, design, and self-improvement.
+                        I am also a musician that graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
+                        I am very passionate in music, art, design, and self-improvement.
                     </p>
                     <div className='resume-section'>
                       <img src="../src/assets/LinkedIN_black.png" alt="LinkedIN icon" className='Social-Icons'/>

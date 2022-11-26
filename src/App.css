@@ -37,12 +37,6 @@ p {
     font-size: 0.8em;
 }
 
-button {
-    font-family: 'HelveticaNowDisplay';
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
 /* ~~~~~~ GENERAL ~~~~~~  */
 
 .App {
@@ -241,11 +235,11 @@ li:active {
 .Landing-Text h1 {
     font-family: 'Stigfier';
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 4.2em;
     letter-spacing: 2px;
     padding: 0;
     margin: 0 auto 0rem auto;
-    font-weight: 500;
+    font-weight: 400;
     animation: left-to-right 1s ease-in-out forwards;
 }
 
@@ -253,6 +247,7 @@ li:active {
     font-family: 'Stigfier';
     font-weight: 300;
     font-size: 1.25em;
+    letter-spacing: 1.75px;
     padding: 0;
     animation: left-to-right 1s ease-in-out forwards;
     animation-delay: 1s;
@@ -294,7 +289,7 @@ li:active {
 }
 
 .Bio {
-    width: 90vw;
+    width: 80vw;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
@@ -329,13 +324,16 @@ li:active {
 
 .Bio-items p {
     font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 1.25px;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
+    font-weight: 200;
+    font-size: 1.25em;
+    line-height: 1.5;
     padding: 0;
     margin: 0;
     margin-bottom: 2rem;
+    font-family: serenity,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    opacity: 0.9;
 }
 
 .readmore {
@@ -395,7 +393,8 @@ li:active {
 
 .skills-container {
     height: 65vh;
-    width: 75vw;
+    width: 70vw;
+    max-width: 75vw;
 }
 
 .skill-icons {
@@ -403,6 +402,7 @@ li:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .skill-icons i:hover {
@@ -419,7 +419,8 @@ li:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 5rem;
+    margin: 1rem 3rem;
+    width: 3.25em;
 }
 
 
@@ -434,7 +435,7 @@ li:active {
 }
 
 .Work-Preview:hover {
-    opacity: 0.9;
+    mix-blend-mode:soft-light;
 }
 
 .Work-Container {
@@ -448,37 +449,52 @@ li:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    height: 310px;
-    max-width: 55%;
-    font-size: 1.4em;
+    margin-top: 0.5rem;
+    max-width: 70%;
 }
 
 .Work-Details p {
-    text-align: end;
     padding: 0.75rem 0rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    padding-left: 3rem;
+    font-weight: 200;
     margin-top: 0;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: serenity,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4rem;
 }
 
 .project-text h4 {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 0;
-    font-size: 1.2em;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
     font-weight: 900;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.25px;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+.project-text h4:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .project-single-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7rem;
-    width: 65vw;
+    width: 68vw;
     max-width: 70vw;
 }
 
@@ -489,7 +505,7 @@ li:active {
     padding: 0;
     justify-content: center;
     align-items: center;
-    font-size: 0.6em;
+    font-size: 0.8em;
     border: none;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -508,11 +524,26 @@ li:active {
 }
 
 .coming-soon h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 400;
     text-align: center;
-    margin: 2rem auto;
-    opacity: 0.9;
+    margin: 5em auto 2rem auto;
+    opacity: 0.8;
+}
+
+.project-programs {
+    margin: 0;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-family: 'HelveticaNowDisplay';
+    width:min-content;
+}
+
+.project-programs span {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    color: white;
+    background-color: rgba(111, 110, 110, 0.855);
 }
 
 /* ~~~~~~ PROJECTS section ~~~~~~  */
@@ -574,25 +605,30 @@ li:active {
 }
 
 .contact-items p {
-    margin-bottom: 2rem;
-    font-size: 1em;
+    margin-bottom: 4rem;
+    font-size: 1.3em;
+    font-family: serenity,sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
+
 .contact-items button {
-    margin: 1rem auto;
-    width: 7rem;
-    height: 3rem;
+    width: 6rem;
+    height: 2.7rem;
     font-size: 0.8em;
-    border: 1px solid black;
-    border-radius: 2px;
-    background-color: transparent;
-    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Stigfier';
 }
 
 .contact-items button:hover {
-    background-color: rgb(242, 242, 242); 
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    color: black;
 }
-
 /* ~~~~~~ FOOTER ~~~~~~  */
 
 .Footer {
@@ -728,6 +764,15 @@ li:active {
     src:
          url('fonts/stigfier/Stigfier.woff') format('woff'),
          url('fonts/stigfier/Stigfier.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Megatoya';
+    src:
+         url('fonts/BDMegatoya/BDMegatoya-Regular.woff') format('woff'),
+         url('fonts/BDMegatoya/BDMegatoya-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }

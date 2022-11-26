@@ -8,7 +8,7 @@ function Landing() {
                     <h1>Bridger Brown</h1>
                     <h2>Front-End Web Developer + Designer</h2>
                 </div>
-                <img src='./src/assets/bg-swirl.png' id='land-bg'/>
+                <img src='./src/assets/rightswirl.png' id='land-bg'/>
             </div>
         </div>
     )
