@@ -112,7 +112,7 @@ button {
 .swirls {
     width: 25px;
     height: 25px;
-    margin: 0 3rem;
+    margin: 0 1rem;
     opacity: 0.8;
 }
 
@@ -219,7 +219,6 @@ li:active {
 .Landing-Page {
     height: 90vh;
     width: 95vw;
-    border: 1px solid black;
     margin-bottom: 9rem;
 }
 
@@ -227,12 +226,15 @@ li:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
+    box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
 }
 
 .Landing-Text {
     position: absolute;
     left: 5%;
-    top: 9%;
+    top: 8%;
 }
 
 .Landing-Text h1 {
@@ -250,18 +252,20 @@ li:active {
     font-family: 'Stigfier';
     font-weight: 300;
     font-size: 1.25em;
-    margin-bottom: 1.5rem;
     padding: 0;
     animation: left-to-right 1s ease-in-out forwards;
     animation-delay: 1s;
     opacity: 0;
 }
 
-#mars-circle {
-    width: 150px;
-    position: absolute;
-    right: 4.5%;
-    bottom: 7%;
+#land-bg {
+    width: 95vw;
+    height: 90vh;
+    opacity: 0.9;
+    object-fit:cover;
+    mix-blend-mode:color-burn;
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes left-to-right {
@@ -304,8 +308,8 @@ li:active {
 }
 
 .Bio img {
-    height: 25rem;
-    width: 25rem;
+    height: 22rem;
+    width: 22rem;
     object-fit: cover; 
 }
 
@@ -358,8 +362,8 @@ li:active {
 }
 
 .resume-section img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 .resume-section img,
