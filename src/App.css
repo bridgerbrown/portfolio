@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    letter-spacing: 0.5px;
 }
 
 body {
@@ -174,7 +175,7 @@ button {
     margin: 0;
     padding-bottom: 0rem;
     list-style: none;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 1em;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -185,7 +186,7 @@ button {
 
 a:link {
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 li:active,
@@ -240,7 +241,7 @@ li:active {
 .Landing-Text h1 {
     font-family: 'Stigfier';
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 4em;
     letter-spacing: 2px;
     padding: 0;
     margin: 0 auto 0rem auto;
@@ -330,6 +331,7 @@ li:active {
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 1.25px;
+    letter-spacing: 0.5px;
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -359,6 +361,7 @@ li:active {
 .resume-section {
     display: flex;
     justify-content: left;
+    align-items: center;
 }
 
 .resume-section img {
@@ -372,18 +375,20 @@ li:active {
 }
 
 .resume-section button {
-    width: 5.5rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 2.4rem;
     font-size: 0.8em;
-    border: 1px solid black;
-    border-radius: 2px;
-    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
     font-family: 'Stigfier';
 }
 
 .resume-section button:hover {
     cursor: pointer;
     background-color: rgb(242, 242, 242);
+    color: black;
 }
 
 /* ~~~~~~ SKILLS section ~~~~~~  */
@@ -433,7 +438,6 @@ li:active {
 }
 
 .Work-Container {
-    width: 95vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -442,39 +446,65 @@ li:active {
 .Work-Details {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
-    width: 40vw;
+    height: 310px;
+    max-width: 55%;
     font-size: 1.4em;
 }
 
 .Work-Details p {
     text-align: end;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0rem;
     font-weight: 400;
-    width: 85%;
+    letter-spacing: 0.5px;
+    padding-left: 3rem;
     margin-top: 0;
 }
 
-.Work-Details h4 {
+.project-text h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
     margin: 0;
-    padding-right: 1rem;
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 0.5px;
     text-decoration: none;
 }
 
 .project-single-container {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
     margin-bottom: 7rem;
+    width: 65vw;
+    max-width: 70vw;
 }
 
 .project-single-container button {
-    padding: 0.75rem;
-    border: 1px solid gray;
-    border-radius: 2px;
-    color: gray;
+    width: 5.4rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Stigfier';
+}
+
+.project-single-container button:hover {
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+    color: black;
+}
+
+.project-buttons {
+    display: flex;
 }
 
 .coming-soon h3 {
