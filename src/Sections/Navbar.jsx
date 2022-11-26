@@ -6,19 +6,15 @@ function Navbar() {
             <div className='Navbar-heading'>
             </div>
             <div className='navbar-items'>
-                    <a href="#home">
-                        <li>Home</li>
+                    <a href="#bio">
+                        <li>About</li>
                     </a>
 
                     <a href="#projects">
                         <li>Projects</li>
                     </a>
 
-                    <a href="#bio">
-                        <li>About</li>
-                    </a>
-
-                    <a href="#bio">
+                    <a href="#contact">
                         <li>Contact</li>
                     </a>
             </div>

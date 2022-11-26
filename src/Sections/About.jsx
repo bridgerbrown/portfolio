@@ -37,7 +37,11 @@ function About() {
 
     return(
         <div className='Bio-Container' id="bio">
-            <h3 className='Section-Headers'>About</h3>
+            <div className='section-line'>
+              <img src="./src/assets/star1.png" className='swirls'/>
+              <h3 className='Section-Headers'>About</h3>
+              <img src="./src/assets/star1.png" className='swirls'/>
+            </div>
             <div className="Bio">  
                 <img src="./src/assets/B-cortona.png" alt="bridger-headshot" class="reveal-left"/>
                 <div className="Bio-items reveal-right">                    

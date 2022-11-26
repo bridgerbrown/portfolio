@@ -95,8 +95,6 @@ button {
     width: min-content;
     text-transform: uppercase;
     padding: 0;
-    margin: 0 auto;
-    margin-bottom: 5rem;
 }
 
 .Section-Container {
@@ -109,6 +107,24 @@ button {
 
 .Headers-Center {
     justify-content: center;
+}
+
+.swirls {
+    width: 25px;
+    height: 25px;
+    margin: 0 3rem;
+    opacity: 0.8;
+}
+
+.section-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.section-line h3 {
+    padding-left: 3px;
 }
 
 /* ~~~~~~ NAVBAR ~~~~~~ */
@@ -204,7 +220,7 @@ li:active {
     height: 90vh;
     width: 95vw;
     border: 1px solid black;
-    margin-bottom: 12rem;
+    margin-bottom: 9rem;
 }
 
 .Landing-box {
@@ -242,7 +258,7 @@ li:active {
 }
 
 #mars-circle {
-    width: 100px;
+    width: 150px;
     position: absolute;
     right: 4.5%;
     bottom: 7%;
@@ -266,6 +282,10 @@ li:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#bio {
+    padding-top: 3rem;
 }
 
 .Bio {
@@ -303,7 +323,7 @@ li:active {
 }
 
 .Bio-items p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: 1.25px;
     line-height: 1.6;
@@ -367,7 +387,6 @@ li:active {
 .skills-container {
     height: 65vh;
     width: 75vw;
-    margin-bottom: 2rem;
 }
 
 .skill-icons {
@@ -400,8 +419,9 @@ li:active {
 .Work-Preview {
     width: 430px;
     height: 310px;
-    border-radius: 4px;
     cursor: pointer;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .Work-Preview:hover {
@@ -468,6 +488,10 @@ li:active {
     width: 1050px;
 } 
 
+#projects {
+    padding-top: 3rem;
+}
+
 .Project-Container {
     display: flex;
     flex-direction: column;
@@ -495,36 +519,6 @@ li:active {
 .Project-Details p {
     background-color: aliceblue;
     margin-bottom: 2rem;
-}
-
-/* CAROUSEL */
-
-.styles-module_carousel-base__3keqD div>button[data-direction=left] {
-    background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50% no-repeat;
-    border: none;
-    cursor: pointer;
-    height: 80px;
-    outline: 0;
-    position: relative;
-    top: 200px;
-    transform: rotate(180deg);
-    margin-right: 1rem;
-}
-
-.styles-module_carousel-base__3keqD div>button[data-direction=right] {
-    background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50% no-repeat;
-    border: none;
-    cursor: pointer;
-    height: 80px;
-    outline: 0;
-    position: relative;
-    top: 200px;
-    margin-left: 1rem;
-}
-
-.Section-Container-Carousel {
-    margin: 5rem auto 8rem auto;
-    width: 1056px;
 }
 
 /* ~~~~~~ CONTACT ~~~~~~  */

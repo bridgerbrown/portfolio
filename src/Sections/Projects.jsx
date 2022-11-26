@@ -6,7 +6,11 @@ import ThirdProject from './projects/ThirdProject'
 function Projects() {
     return(
         <div className='Section-Container section-space' id="projects">
-            <h3 className='Section-Headers'>Projects</h3>
+            <div className='section-line'>
+              <img src="./src/assets/star1.png" className='swirls'/>
+              <h3 className='Section-Headers'>Projects</h3>
+              <img src="./src/assets/star1.png" className='swirls'/>
+            </div>
             <div className='Work-Container'>
                 <EcommerceProject />
                 <QuizProject />

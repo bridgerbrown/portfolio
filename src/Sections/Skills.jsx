@@ -3,7 +3,11 @@ import React from "react";
 function Skills() {
     return(
         <div className="skills-container">
-            <h3 className='Section-Headers'>Skills</h3>
+            <div className='section-line'>
+              <img src="./src/assets/star1.png" className='swirls'/>
+              <h3 className='Section-Headers'>Skills</h3>
+              <img src="./src/assets/star1.png" className='swirls'/>
+            </div>
             <div className="skill-icons">
                 <div className="skill">
                     <i class="devicon-html5-plain"></i>
