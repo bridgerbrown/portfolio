@@ -3,8 +3,8 @@ import React from 'react'
 function Navbar(props) {
     return(
         <div className='Navbar'>
-            <div className='Navbar-heading'>
-                <button id='btn-toggle'onClick={props.themeChange}>dark</button>
+            <div>
+
             </div>
             <div className='navbar-items'>
                     <a href="#bio">
@@ -18,6 +18,22 @@ function Navbar(props) {
                     <a href="#contact">
                         <li>Contact</li>
                     </a>
+                <div className='Navbar-heading'>
+                    {
+                        !props.darkLand ?
+                        <img 
+                            src='./src/assets/sun.png' 
+                            alt='switch to light theme' 
+                            onClick={props.themeChange}
+                        />
+                        :
+                        <img 
+                            src='./src/assets/moon.png' 
+                            alt='switch to dark theme'
+                            onClick={props.themeChange}
+                        />
+                    }
+                </div>
             </div>
         </div>
     )

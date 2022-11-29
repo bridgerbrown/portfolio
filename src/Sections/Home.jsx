@@ -10,17 +10,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Home() {
-    const [darkTheme, setDarkTheme] = useState(false)
-    const [darkLand, setDarkLand] = useState(false)
-
-    useEffect(() => {
-        if(darkTheme) {
-            setDarkLand(true)
-        } else {
-            setDarkLand(false)
-        }
-    }, [darkTheme])
-
+    const [darkTheme, setDarkTheme] = useState(true)
+    const [darkLand, setDarkLand] = useState(true)
 
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const currentTheme = localStorage.getItem("theme");
@@ -33,17 +24,25 @@ function Home() {
     function themeChange() {
       if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
-        setDarkTheme(true)
+        setDarkTheme(!darkTheme)
+        
       } else {
         document.body.classList.toggle("dark-theme");
-        setDarkTheme(false)
+        setDarkTheme(!darkTheme)
       }
     };
-    
+
+    useEffect(() => {
+        if(darkTheme) {
+            setDarkLand(true)
+        } else if(!darkTheme){
+           setDarkLand(false) 
+        }
+    }, [darkTheme])
 
     return(
         <div className="Home" id="home">
-            <Navbar themeChange={themeChange} />
+            <Navbar themeChange={themeChange} darkLand={darkLand} />
             <Landing darkLand={darkLand} />
             <About />
             <Skills />

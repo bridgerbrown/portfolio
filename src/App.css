@@ -9,10 +9,12 @@ body {
     background-color: var(--bkg-color);
     color: var(--text-color);
     font-family: 'Stigfier';
+    animation: fadein 2s;
 }
 
+
 :root {
-    color-scheme: light dark; /* both supported */
+    color-scheme: light dark;
   }
 
 body {
@@ -24,6 +26,7 @@ body {
 --invert-hover: none;
 --btn-hover: black;
 --text-hover: white;
+--nav-hover: #7a7a7a;
 }
 
 body.dark-theme {
@@ -35,6 +38,7 @@ body.dark-theme {
 --invert-hover: invert();
 --btn-hover: white;
 --text-hover: black;
+--nav-hover: #7a7a7a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +51,7 @@ body {
     --invert-hover: invert();
     --btn-hover: white;
     --text-hover: black;
+    --nav-hover: #7a7a7a;
 }
 body.light-theme {
     --text-color: white;
@@ -57,6 +62,7 @@ body.light-theme {
     --invert-hover: none;
     --btn-hover: black;
     --text-hover: white;
+    --nav-hover: #7a7a7a;
 }
 }
 
@@ -167,7 +173,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 2.5%;
+    margin-right: 1%;
 }
 
 .Navbar-heading {
@@ -203,15 +209,15 @@ li:active,
 li::after,
 li:focus,
 li:target {
-    color: var(--text-hover);
+    color: var(--nav-hover);
 }
 
 li:hover {
-    color: var(--text-hover);
+    color: var(--nav-hover);
 }
 
 li:active {
-    color: var(--text-hover)
+    color: var(--nav-hover)
 }
 
 .Navbar img {
@@ -223,6 +229,17 @@ li:active {
 .Navbar h1 {
     font-size: 1.25em;
     margin-left: 2rem;
+}
+
+.Navbar-heading img {
+    width: 25px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.Navbar-heading img:hover {
+    margin-left: 2rem;
+    opacity: 0.5;
 }
 
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
@@ -237,9 +254,6 @@ li:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
-    -moz-box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
-    box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.9);
 }
 
 .Landing-Text {
@@ -257,7 +271,7 @@ li:active {
     margin: 0 auto 0rem auto;
     font-weight: 400;
     animation: left-to-right 1s ease-in-out forwards;
-    color: var(--text-color);
+    opacity: 0;
 }
 
 .Landing-Text h2 {
@@ -270,15 +284,6 @@ li:active {
     animation: left-to-right 1s ease-in-out forwards;
     animation-delay: 1s;
     opacity: 0;
-    color: var(--text-color);
-}
-
-#land-bg {
-    width: 95vw;
-    height: 90vh;
-    object-fit:cover;
-    padding: 0;
-    margin: 0;
 }
 
 @keyframes left-to-right {
@@ -289,6 +294,23 @@ li:active {
     100% {
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+#land-bg,
+#land-bg2 {
+    width: 95vw;
+    height: 92vh;
+    object-fit:cover;
+    padding: 0;
+    margin: 0;
+}
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
     }
 }
 

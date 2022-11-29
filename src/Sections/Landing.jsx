@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 
 function Landing(props) {
+    console.log(props.darkLand)
+
     return(
         <div className='Landing-Page'>
             <div className='Landing-box'>
@@ -9,12 +11,14 @@ function Landing(props) {
                     <h1>Bridger Brown</h1>
                     <h2>Front-End Web Developer + Designer</h2>
                 </div>
-                {
-                    props.darkLand ?
-                    <img src='./src/assets/underswirl-darkmode.png' id='land-bg'/>
-                    :
-                    <img src='./src/assets/underswirl-lighter.png' id='land-bg'/>
-                }
+                <div className='landpages'>
+                    {
+                        !props.darkLand ?
+                        <img src='./src/assets/underswirl-darkmode.png' id='land-bg'/>
+                        :
+                        <img src='./src/assets/underswirl-lightmode.png' id='land-bg2'/>
+                    }
+                </div>
             </div>
         </div>
     )
