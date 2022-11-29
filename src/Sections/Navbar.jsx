@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar(props) {
     return(
         <div className='Navbar'>
             <div className='Navbar-heading'>
+                <button id='btn-toggle'onClick={props.themeChange}>dark</button>
             </div>
             <div className='navbar-items'>
                     <a href="#bio">

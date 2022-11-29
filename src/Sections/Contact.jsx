@@ -17,7 +17,12 @@ function Contact() {
             </div>
             <div className="contact-items">
                 <p>I am currently available for work. Feel free to reach out to me for any inquiries!</p>
-                <button onClick={copyContact} id="copy-button">Copy Email</button>
+                <div className="resume-section">
+                    <img src="../src/assets/LinkedIN_black.png" alt="LinkedIN icon" className='Social-Icons'/>
+                      <img src="../src/assets/Github_black.png" alt="Github icon"className='Social-Icons'/>
+                      <img src="../src/assets/Instagram_black.png" alt="Instagram icon"className='Social-Icons'/>
+                    <button onClick={copyContact} id="copy-button">Copy Email</button>
+                </div>
             </div>
         </div>
     )
