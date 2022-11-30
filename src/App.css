@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     letter-spacing: 0.5px;
+    width: 100%;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     background-color: var(--bkg-color);
     color: var(--text-color);
     font-family: 'Stigfier';
-    animation: fadein 5sec;
+    animation: fade 5sec;
 }
 
 :root {
@@ -25,8 +26,7 @@ body {
 --invert-hover: none;
 --btn-hover: black;
 --text-hover: white;
---nav-hover: #a35ef7;
---subtitle-color: #a35ef7;
+--nav-hover: #7a7a7a;
 }
 
 body.dark-theme {
@@ -38,8 +38,7 @@ body.dark-theme {
 --invert-hover: invert();
 --btn-hover: white;
 --text-hover: black;
---nav-hover: #591ba4;
---subtitle-color: #591ba4;
+--nav-hover: #7a7a7a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,8 +51,7 @@ body {
     --invert-hover: invert();
     --btn-hover: white;
     --text-hover: black;
-    --nav-hover: #591ba4;
-    --subtitle-color: #591ba4;
+    --nav-hover: #7a7a7a;
 }
 body.light-theme {
     --text-color: white;
@@ -64,8 +62,7 @@ body.light-theme {
     --invert-hover: none;
     --btn-hover: black;
     --text-hover: white;
-    --nav-hover: #a35ef7;
-    --subtitle-color: #a35ef7;
+    --nav-hover: #7a7a7a;
 }
 }
 
@@ -176,7 +173,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 1%;
+    margin-right: 0.5%;
 }
 
 .Navbar-heading {
@@ -237,6 +234,7 @@ li:active {
 .Navbar-heading img {
     width: 25px;
     margin-left: 2rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
 
@@ -248,8 +246,8 @@ li:active {
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
-    height: 90vh;
-    width: 95vw;
+    height: 100vh;
+    width: 100vw;
     margin-bottom: 9rem;
 }
 
@@ -268,7 +266,7 @@ li:active {
 .Landing-Text h1 {
     font-family: 'Stigfier';
     text-transform: uppercase;
-    font-size: 4.25em;
+    font-size: 4vw;
     letter-spacing: 2px;
     padding: 0;
     margin: 0 auto 0rem auto;
@@ -280,14 +278,13 @@ li:active {
 .Landing-Text h2 {
     font-family: 'Stigfier';
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.25vw;
     letter-spacing: 1.75px;
     padding: 0;
     margin: 0.5rem auto 0 auto;
     animation: left-to-right 1s ease-in-out forwards;
     animation-delay: 1s;
     opacity: 0;
-    color: var(--subtitle-color);
 }
 
 @keyframes left-to-right {
@@ -303,10 +300,8 @@ li:active {
 
 #land-bg,
 #land-bg2 {
-    left: 2.5rem;
-    position: absolute;
-    width: 95vw;
-    height: 92vh;
+    width: 100vw;
+    height: 100vh;
     object-fit:cover;
     padding: 0;
     margin: 0;
@@ -857,4 +852,60 @@ li:active {
     transform: translateX(0);
     opacity: 1;
   }
+
+
+/* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
+
+@media screen and (max-width: 1750px) {
+    #land-bg,
+    #land-bg2,
+    .Landing-Page {
+        height: 75vh;
+    }
+    .Landing-Text h1 {
+        font-size: 4.5vw;
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    #land-bg,
+    #land-bg2,
+    .Landing-Page {
+        height: 55vh;
+    }
+    .Landing-Text h1 {
+        font-size: 5vw;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    #land-bg,
+    #land-bg2,
+    .Landing-Page {
+        height: 45vh;
+    }
+    .Landing-Text h1 {
+        font-size: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    #land-bg,
+    #land-bg2,
+    .Landing-Page {
+        height: 35vh;
+    }
+    .Landing-Text h1 {
+        font-size: 7.5vw;
+    }
+  }
+
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+        html {
+            width: 100%;
+        }
+    }
 
