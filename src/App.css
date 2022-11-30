@@ -865,6 +865,9 @@ li:active {
     .Landing-Text h1 {
         font-size: 4.5vw;
     }
+    .Landing-Text h2 {
+        font-size: 1.5vw;
+    }
   }
 
   @media screen and (max-width: 1250px) {
@@ -876,7 +879,21 @@ li:active {
     .Landing-Text h1 {
         font-size: 5vw;
     }
+    .Landing-Text h2 {
+        font-size: 1.75vw;
+    }
   }
+
+  @media screen and (max-width: 1150px) {
+    .skills-container {
+        width: 85vw;
+        max-width: 90vw;
+    }
+    .skill {
+        margin: 1rem 1rem;
+    }
+  }
+
 
   @media screen and (max-width: 900px) {
     #land-bg,
@@ -886,6 +903,41 @@ li:active {
     }
     .Landing-Text h1 {
         font-size: 6vw;
+    }
+    .Landing-Text h2 {
+        font-size: 2.25vw;
+    }
+    .Bio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #bio-img {
+        margin-bottom: 3rem;
+        width: 18rem;
+        height: 18rem;
+    }
+    .Bio-items {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .Bio-items p {
+        width: 70vw;
+    }
+    .resume-section {
+        margin-top: 1rem;
+        justify-content:center ;
+    }
+    .resume-section img {   
+        margin: 0 1rem;
+    }
+    .resume-section button {
+        margin: 0 1rem;
+    }
+    .Bio-Container {
+        margin-bottom: 0rem;
     }
   }
 
@@ -897,6 +949,9 @@ li:active {
     }
     .Landing-Text h1 {
         font-size: 7.5vw;
+    }
+    .Landing-Text h2 {
+        font-size: 3vw;
     }
   }
 

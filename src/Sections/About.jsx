@@ -43,7 +43,7 @@ function About() {
               <img src="./src/assets/star1.png" className='swirls'/>
             </div>
             <div className="Bio">  
-                <img src="./src/assets/B-cortona-gray.png" alt="bridger-headshot" class="reveal-left"/>
+                <img src="./src/assets/B-cortona-gray.png" alt="bridger-headshot" className='reveal-left' id='bio-img'/>
                 <div className="Bio-items reveal-right">                    
                     <p>Hello, my name is Bridger Brown and I am a Front-End Web developer based out of Portland, Oregon. 
                         I have experience in Graphic Design which allows me to see websites from a designers mindset.
