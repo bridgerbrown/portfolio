@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
     return(
-        <div className="skills-container">
+        <div className="skills-container Section-container">
             <div className='section-line'>
               <img src="./src/assets/star1.png" className='swirls'/>
               <h3 className='Section-Headers'>Skills</h3>
@@ -48,6 +48,14 @@ function Skills() {
                 <div className="skill">       
                     <i class="devicon-illustrator-plain"></i>
                     <p>ILLUSTRATOR</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-aftereffects-plain"></i>
+                    <p>AFTER EFFECTS</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-figma-plain"></i>
+                    <p>FIGMA</p>
                 </div>
             </div>
         </div>

@@ -101,10 +101,6 @@ p {
     flex-direction: column;
 }
 
-.section-space {
-    margin: 8rem auto 10rem auto;
-}
-
 .Home {
     width: 100%;
     display: flex;
@@ -122,7 +118,9 @@ p {
 }
 
 .Section-Container {
-    margin: 10rem auto 10rem auto;
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .Headers-Right {
@@ -164,8 +162,7 @@ button {
     height: 3rem;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: end;
 }
 
 .navbar-items {
@@ -243,6 +240,67 @@ li:active {
     opacity: 0.5;
 }
 
+.Sidebar {
+    display: none;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+
+.Sidebar-items {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .Sidebar-items .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    display: flex;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .Sidebar-items {padding-top: 15px;}
+    .Sidebar-items a {font-size: 18px;}
+  }
+  
+  .Navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
@@ -266,7 +324,7 @@ li:active {
 .Landing-Text h1 {
     font-family: 'Stigfier';
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 4em;
     letter-spacing: 2px;
     padding: 0;
     margin: 0 auto 0rem auto;
@@ -278,7 +336,7 @@ li:active {
 .Landing-Text h2 {
     font-family: 'Stigfier';
     font-weight: 800;
-    font-size: 1.25vw;
+    font-size: 1.5em;
     letter-spacing: 1.75px;
     padding: 0;
     margin: 0.5rem auto 0 auto;
@@ -300,6 +358,8 @@ li:active {
 
 #land-bg,
 #land-bg2 {
+    position: absolute;
+    left: 0;
     width: 100vw;
     height: 100vh;
     object-fit:cover;
@@ -309,7 +369,7 @@ li:active {
 }
 
 .fade {
-    animation: fade 2s;
+    animation: fade 1s;
 }
 
 @-webkit-keyframes fade {
@@ -354,14 +414,14 @@ li:active {
 }
 
 .Bio {
-    width: 80vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
 .Bio-items {
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -444,8 +504,9 @@ li:active {
 
 .skills-container {
     height: 65vh;
-    width: 70vw;
-    max-width: 75vw;
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .skill-icons {
@@ -455,6 +516,7 @@ li:active {
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    margin: 0 auto;
 }
 
 .skill-icons i:hover {
@@ -471,16 +533,26 @@ li:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 3rem;
-    width: 3.25em;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 20%;
 }
 
 
 /* ~~~~~~ WORK section ~~~~~~  */
 
+.project-single-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12rem;
+}
+
+.project-image {
+    max-width: 50%;
+}
+
 .Work-Preview {
-    width: 430px;
-    height: 310px;
+    width: 90%;
     cursor: pointer;
     object-fit: cover;
     border-radius: 5px;
@@ -494,6 +566,7 @@ li:active {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 10rem;
 }
 
 .Work-Details {
@@ -502,7 +575,7 @@ li:active {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 0.5rem;
-    max-width: 70%;
+    max-width: 55%;
 }
 
 .Work-Details p {
@@ -542,14 +615,6 @@ li:active {
     color: white;
 }
 
-.project-single-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 7rem;
-    width: 68vw;
-    max-width: 70vw;
-}
-
 .project-single-container button {
     width: 5.4rem;
     height: 2.5rem;
@@ -579,7 +644,7 @@ li:active {
     font-size: 1.3em;
     font-weight: 400;
     text-align: center;
-    margin: 5em auto 2rem auto;
+    margin: 2em auto 7rem auto;
     opacity: 0.8;
 }
 
@@ -657,11 +722,13 @@ li:active {
 }
 
 .contact-items p {
+    margin: 0 1rem;
     margin-bottom: 4rem;
     font-size: 1.3em;
     font-family: serenity,sans-serif;
     font-weight: 200;
     font-style: normal;
+    text-align: center;
 }
 
 
@@ -855,34 +922,14 @@ li:active {
 
 
 /* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
-
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1000px) {
     #land-bg,
-    #land-bg2,
-    .Landing-Page {
-        height: 75vh;
-    }
-    .Landing-Text h1 {
-        font-size: 4.5vw;
-    }
-    .Landing-Text h2 {
-        font-size: 1.5vw;
+    #land-bg2 {
+        object-fit:none;
+        object-position: 78% 45%;
     }
   }
 
-  @media screen and (max-width: 1250px) {
-    #land-bg,
-    #land-bg2,
-    .Landing-Page {
-        height: 55vh;
-    }
-    .Landing-Text h1 {
-        font-size: 5vw;
-    }
-    .Landing-Text h2 {
-        font-size: 1.75vw;
-    }
-  }
 
   @media screen and (max-width: 1150px) {
     .skills-container {
@@ -896,17 +943,6 @@ li:active {
 
 
   @media screen and (max-width: 900px) {
-    #land-bg,
-    #land-bg2,
-    .Landing-Page {
-        height: 45vh;
-    }
-    .Landing-Text h1 {
-        font-size: 6vw;
-    }
-    .Landing-Text h2 {
-        font-size: 2.25vw;
-    }
     .Bio {
         flex-direction: column;
         justify-content: center;
@@ -941,17 +977,49 @@ li:active {
     }
   }
 
-  @media screen and (max-width: 700px) {
-    #land-bg,
-    #land-bg2,
-    .Landing-Page {
-        height: 35vh;
+  @media screen and (max-width: 780px) {  
+    .project-single-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .Work-Preview {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    .Work-Details {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project-text {
+        margin: 0;
+    }
+    .Work-Details p {
+        font-size: 1.1em;
+    }
+    .navbar-items {
+        display: none;
+    }
+    .Sidebar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {
     .Landing-Text h1 {
-        font-size: 7.5vw;
+        margin-top: 2rem;
+        font-size: 9vw;
     }
     .Landing-Text h2 {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
   }
 

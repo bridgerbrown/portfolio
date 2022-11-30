@@ -3,7 +3,9 @@ import React from 'react'
 function EcommerceProject() {
     return(
         <div className='project-single-container'>
-            <img src='./src/assets/ecommerce-preview.png' alt="ecommerce preview" className='Work-Preview reveal-left'/>
+            <div className='project-img'>
+                <img src='./src/assets/ecommerce-preview.png' alt="ecommerce preview" className='Work-Preview reveal-left'/>
+            </div>
             <div className='Work-Details reveal-right'>
                 <div className='project-text'>
                 <h4>eCommerce app</h4>

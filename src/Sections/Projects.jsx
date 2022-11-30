@@ -5,7 +5,7 @@ import ThirdProject from './projects/ThirdProject'
 
 function Projects() {
     return(
-        <div className='Section-Container section-space' id="projects">
+        <div className='Section-Container' id="projects">
             <div className='section-line'>
               <img src="./src/assets/star1.png" className='swirls'/>
               <h3 className='Section-Headers'>Projects</h3>

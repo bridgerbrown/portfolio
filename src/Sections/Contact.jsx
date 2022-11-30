@@ -9,7 +9,7 @@ function Contact() {
     }
 
     return (
-        <div className="contact-container" id="contact">
+        <div className="contact-container Section-container" id="contact">
             <div className='section-line'>
               <img src="./src/assets/star1.png" className='swirls'/>
               <h3 className='Section-Headers'>Contact</h3>
