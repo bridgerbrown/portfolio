@@ -20,7 +20,7 @@ function Navbar(props) {
                     </a>
                 <div className='Navbar-heading'>
                     {
-                        !props.darkLand ?
+                        props.darkLand ?
                         <img 
                             src='./src/assets/sun.png' 
                             alt='switch to light theme' 

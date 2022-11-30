@@ -14,9 +14,9 @@ function Landing(props) {
                 <div className='landpages'>
                     {
                         !props.darkLand ?
-                        <img src='./src/assets/underswirl-darkmode.png' id='land-bg'/>
+                        <img src='./src/assets/wave-light.png' key={props.darkLand} className="fade" id='land-bg'/>
                         :
-                        <img src='./src/assets/underswirl-lightmode.png' id='land-bg2'/>
+                        <img src='./src/assets/wave-dark.png' key={props.darkLand} className="fade" id='land-bg2'/>
                     }
                 </div>
             </div>

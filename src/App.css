@@ -9,9 +9,8 @@ body {
     background-color: var(--bkg-color);
     color: var(--text-color);
     font-family: 'Stigfier';
-    animation: fadein 2s;
+    animation: fadein 5sec;
 }
-
 
 :root {
     color-scheme: light dark;
@@ -26,7 +25,8 @@ body {
 --invert-hover: none;
 --btn-hover: black;
 --text-hover: white;
---nav-hover: #7a7a7a;
+--nav-hover: #a35ef7;
+--subtitle-color: #a35ef7;
 }
 
 body.dark-theme {
@@ -38,7 +38,8 @@ body.dark-theme {
 --invert-hover: invert();
 --btn-hover: white;
 --text-hover: black;
---nav-hover: #7a7a7a;
+--nav-hover: #591ba4;
+--subtitle-color: #591ba4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,7 +52,8 @@ body {
     --invert-hover: invert();
     --btn-hover: white;
     --text-hover: black;
-    --nav-hover: #7a7a7a;
+    --nav-hover: #591ba4;
+    --subtitle-color: #591ba4;
 }
 body.light-theme {
     --text-color: white;
@@ -62,7 +64,8 @@ body.light-theme {
     --invert-hover: none;
     --btn-hover: black;
     --text-hover: white;
-    --nav-hover: #7a7a7a;
+    --nav-hover: #a35ef7;
+    --subtitle-color: #a35ef7;
 }
 }
 
@@ -284,6 +287,7 @@ li:active {
     animation: left-to-right 1s ease-in-out forwards;
     animation-delay: 1s;
     opacity: 0;
+    color: var(--subtitle-color);
 }
 
 @keyframes left-to-right {
@@ -299,12 +303,38 @@ li:active {
 
 #land-bg,
 #land-bg2 {
+    left: 2.5rem;
+    position: absolute;
     width: 95vw;
     height: 92vh;
     object-fit:cover;
     padding: 0;
     margin: 0;
+    z-index: -1;
 }
+
+.fade {
+    animation: fade 2s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
 @keyframes fadein {
     0% {
         opacity:0;
@@ -313,6 +343,7 @@ li:active {
         opacity:1;
     }
 }
+
 
 /* ~~~~~~ BIO section ~~~~~~ */
 

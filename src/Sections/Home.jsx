@@ -25,7 +25,6 @@ function Home() {
       if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
         setDarkTheme(!darkTheme)
-        
       } else {
         document.body.classList.toggle("dark-theme");
         setDarkTheme(!darkTheme)
@@ -40,8 +39,10 @@ function Home() {
         }
     }, [darkTheme])
 
+
+
     return(
-        <div className="Home" id="home">
+        <div className="Home fade" id="home" key={darkLand}>
             <Navbar themeChange={themeChange} darkLand={darkLand} />
             <Landing darkLand={darkLand} />
             <About />
