@@ -15,7 +15,7 @@ function QuizProject() {
                 </p>
                 </div>
                 <div className='project-buttons'>
-                    <button className='ReadMore'>Test</button>
+                    <button className='ReadMore'>Preview</button>
                     <button className='ReadMore'>Github</button>
                 </div>    
             </div>

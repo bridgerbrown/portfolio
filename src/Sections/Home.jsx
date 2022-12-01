@@ -16,18 +16,20 @@ function Home() {
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
-      document.body.classList.toggle("dark-theme");
-    } else if (currentTheme == "light") {
       document.body.classList.toggle("light-theme");
+      setDarkTheme(true)
+    } else if (currentTheme == "light") {
+      document.body.classList.toggle("dark-theme");
+      setDarkTheme(false)
     }
     
     function themeChange() {
       if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
-        setDarkTheme(!darkTheme)
+        setDarkTheme(true)
       } else {
         document.body.classList.toggle("dark-theme");
-        setDarkTheme(!darkTheme)
+        setDarkTheme(false)
       }
     };
 
@@ -37,14 +39,15 @@ function Home() {
         } else if(!darkTheme){
            setDarkLand(false) 
         }
+        console.log(darkTheme)
     }, [darkTheme])
 
 
 
     return(
-        <div className="Home fade" id="home" key={darkLand}>
+        <div className="Home fade" id="home" key={darkTheme}>
             <Navbar themeChange={themeChange} darkLand={darkLand} />
-            <Landing darkLand={darkLand} />
+            <Landing darkLand={darkLand} key={darkLand}/>
             <About />
             <Skills />
             <Projects />
