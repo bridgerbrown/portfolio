@@ -12,35 +12,35 @@ import { useEffect } from "react";
 function Home() {
     const [darkTheme, setDarkTheme] = useState(true)
     const [darkLand, setDarkLand] = useState(true)
+    const [count, setCount] = useState(0)
 
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
       document.body.classList.toggle("light-theme");
       setDarkTheme(true)
+      setCount(count + 1)
     } else if (currentTheme == "light") {
       document.body.classList.toggle("dark-theme");
       setDarkTheme(false)
+      setCount(count + 1)
     }
     
     function themeChange() {
       if (prefersDarkScheme.matches) {
         document.body.classList.toggle("light-theme");
         setDarkTheme(true)
+        setCount(count + 1)
       } else {
         document.body.classList.toggle("dark-theme");
         setDarkTheme(false)
+        setCount(count + 1)
       }
     };
 
     useEffect(() => {
-        if(darkTheme) {
-            setDarkLand(true)
-        } else if(!darkTheme){
-           setDarkLand(false) 
-        }
-        console.log(darkTheme)
-    }, [darkTheme])
+        setDarkLand(!darkLand)
+    }, [count])
 
 
 

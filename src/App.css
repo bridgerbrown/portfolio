@@ -23,8 +23,8 @@ body {
 --btn-color: #d9dbdd;
 --btn-text-color: black;
 --invert: invert();
---invert-hover: none;
---btn-hover: black;
+--invert-hover: invert(0.6);
+--btn-hover: #7a7a7a;
 --text-hover: white;
 --nav-hover: #7a7a7a;
 }
@@ -59,8 +59,8 @@ body.light-theme {
     --btn-color: #d9dbdd;
     --btn-text-color: black;
     --invert: invert();
-    --invert-hover: none;
-    --btn-hover: black;
+    --invert-hover: invert(0.6);
+    --btn-hover: #7a7a7a;
     --text-hover: white;
     --nav-hover: #7a7a7a;
 }
@@ -434,6 +434,10 @@ li:active {
     object-fit: cover; 
 }
 
+#bio-img {
+    margin-right: 2rem;
+}
+
 .Bio-items h2 {
     font-size: 2em;
     font-weight: 400;
@@ -467,6 +471,11 @@ li:active {
     align-items: center;
 }
 
+.resume-section a,
+.resume-section button {
+    margin: 0 2rem 0 0;
+}
+
 .resume-section img {
     width: 2.4rem;
     height: 2.4rem;
@@ -475,11 +484,6 @@ li:active {
 
 .resume-section img:hover {
     filter: var(--invert-hover);
-}
-
-.resume-section img,
-.resume-section button {
-    margin-right: 2rem;
 }
 
 .resume-section button {
@@ -731,7 +735,6 @@ li:active {
     text-align: center;
 }
 
-
 .contact-items button {
     width: 6.5rem;
     height: 2.5rem;
@@ -748,6 +751,45 @@ li:active {
     background-color: var(--btn-hover);
     color: var(--text-hover);
 }
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons a,
+.contact-icons button {
+    margin: 0 1rem;
+}
+
+.contact-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+    filter: var(--invert);
+}
+
+.contact-icons img:hover {
+    filter: var(--invert-hover);
+}
+
+.contact-icons button {
+    width: 5.5rem;
+    height: 2.4rem;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-family: 'Stigfier';
+}
+
+.contact-icons button:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+    color: var(--text-hover);
+}
+
 /* ~~~~~~ FOOTER ~~~~~~  */
 
 .Footer {

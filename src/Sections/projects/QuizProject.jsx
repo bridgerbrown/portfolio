@@ -16,7 +16,9 @@ function QuizProject() {
                 </div>
                 <div className='project-buttons'>
                     <button className='ReadMore'>Preview</button>
-                    <button className='ReadMore'>Github</button>
+                    <a href='https://github.com/bridgerbrown/quiz-app-project' target="_blank" rel="noopener noreferrer">
+                        <button className='ReadMore'>Github</button>
+                    </a>
                 </div>    
             </div>
         </div>

@@ -15,8 +15,12 @@ function EcommerceProject() {
                 </p>
                 </div>
                 <div className='project-buttons'>
-                    <button className='ReadMore'>Preview</button>
-                    <button className='ReadMore'>Github</button>
+                    <a>
+                        <button className='ReadMore'>Preview</button>
+                    </a>
+                    <a href='https://github.com/bridgerbrown/ecommerce-basic' target="_blank" rel="noopener noreferrer">
+                        <button className='ReadMore'>Github</button>
+                    </a>
                 </div>  
             </div>
         </div>

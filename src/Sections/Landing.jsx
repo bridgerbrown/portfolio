@@ -13,7 +13,7 @@ function Landing(props) {
                 </div>
                 <div className='landpages'>
                     {
-                        props.darkLand ?
+                        !props.darkLand ?
                         <img src='./src/assets/wave-dark.png' key={props.darkLand} className="fade" id='land-bg'/>
                         :
                         <img src='./src/assets/wave-light.png' key={props.darkLand} className="fade" id='land-bg2'/>
