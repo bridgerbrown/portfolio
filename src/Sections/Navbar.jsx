@@ -1,12 +1,16 @@
 import React from 'react'
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar'
 import { useState } from 'react';
 
 function Navbar(props) {
+    const [sidebarOpen, setSideBarOpen] = useState(false);
+    const handleViewSidebar = () => {
+      setSideBarOpen(!sidebarOpen);
+    };
 
     return(
         <div className='Navs'>
-            <div></div>
+            <div className='left-of-nav'></div>
             <div className='Navbar'>
                 <div className='navbar-items'>
                         <a href="#bio">
@@ -38,6 +42,7 @@ function Navbar(props) {
                     </div>
                 </div>
             </div>
+            <Sidebar isOpen={sidebarOpen} toggleSidebar={handleViewSidebar} />
         </div>
     )
 }  

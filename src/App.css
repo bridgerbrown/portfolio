@@ -240,13 +240,87 @@ li:active {
 
 /* ~~~~~~ SIDEBAR ~~~~~~ */
 
+.Sidebar-container {
+    display: none;
+}
 
+.sidebar {
+    position: absolute;
+    display: none;
+    top: 64.5px;
+    right: 0;
+    height: 100%;
+    width: 33vw;
+    transition: left 0.3s ease-in-out;
+    background-color: var(--btn-color);
+    z-index: 2;
+    opacity: 0.95;
+  }
+  .sidebar-toggle {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0px;
+    z-index: 1;
+    border: none;
+    background-color: var(--btn-color);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.45rem 0.5rem 0.5rem;
+    width: 64.5px;
+    height: 64.5px;
+    cursor: pointer;
+  }
+  .content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    background-color: lightgray;
+  }
+  .sidebar.open {
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  .content.open {
+    left: 15vw;
+  }
+
+  .sidebar li {
+    color: var(--bkg-color);
+    list-style: none;
+    margin: 2rem auto;
+  }
+  
+  .sidebar a {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar a:hover {
+    background-color: var(--text-color);
+  }
+
+  .sidebar-toggle:hover {
+    background-color: var(--text-color);
+  }
+  
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 9rem;
+    margin-bottom: 9rem;    
 }
 
 .Landing-box {
@@ -306,7 +380,7 @@ li:active {
     object-fit:cover;
     padding: 0;
     margin: 0;
-    z-index: -1;
+z-index: -1;
 }
 
 .fade {
@@ -481,6 +555,11 @@ li:active {
     margin: 10px;
     padding: 10px;
     flex-basis: 20%;
+}
+
+.after-effects p {
+    font-size: 0.24em;
+    margin-top: 11px;
 }
 
 
@@ -989,13 +1068,19 @@ li:active {
         display: none;
     }
     .Sidebar-container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+        display: inherit;
     }
     .Navbar {
         height: 60px;
         display: none;
+    }
+    .left-of-nav {
+        width: 100vw;
+        height: 64.5px;
+        background-color: var(--btn-color);
+      }
+    .sidebar-toggle {
+
     }
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SideBar = props => {
+const Sidebar = props => {
   const sidebarClass = props.isOpen ? "sidebar open" : "sidebar";
   return (
     <div className="Sidebar-container">
@@ -23,4 +23,4 @@ const SideBar = props => {
     </div>
   );
 };
-export default SideBar;
+export default Sidebar;

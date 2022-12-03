@@ -49,7 +49,7 @@ function Skills() {
                     <i class="devicon-illustrator-plain"></i>
                     <p>ILLUSTRATOR</p>
                 </div>
-                <div className="skill">       
+                <div className="skill after-effects">       
                     <i class="devicon-aftereffects-plain"></i>
                     <p>AFTER EFFECTS</p>
                 </div>
