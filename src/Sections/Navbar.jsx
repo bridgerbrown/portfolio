@@ -1,15 +1,8 @@
 import React from 'react'
+import Sidebar from './Sidebar';
+import { useState } from 'react';
 
 function Navbar(props) {
-    function openNav() {
-        document.getElementById("Sidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-      
-    function closeNav() {
-        document.getElementById("Sidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    }
 
     return(
         <div className='Navs'>
@@ -43,26 +36,6 @@ function Navbar(props) {
                             />
                         }
                     </div>
-                </div>
-            </div>
-            <div className='Sidebar'>
-                <div id="Sidebar" className="Sidebar-items">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#bio">
-                        <li>About</li>
-                    </a>
-
-                    <a href="#projects">
-                        <li>Projects</li>
-                    </a>
-
-                    <a href="#contact">
-                        <li>Contact</li>
-                    </a>
-                </div>
-
-                <div id="main">
-                    <button class="openbtn" onclick="openNav()">☰</button>
                 </div>
             </div>
         </div>

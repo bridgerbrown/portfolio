@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
     letter-spacing: 0.5px;
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -102,7 +103,6 @@ p {
 }
 
 .Home {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +120,6 @@ p {
 .Section-Container {
     max-width: 1180px;
     margin: 0 auto;
-    width: 90%;
 }
 
 .Headers-Right {
@@ -156,11 +155,16 @@ button {
 
 /* ~~~~~~ NAVBAR ~~~~~~ */
 
+.Navs {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
 
 .Navbar {
-    width: 100%;
     height: 3rem;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: end;
 }
@@ -217,12 +221,6 @@ li:active {
     color: var(--nav-hover)
 }
 
-.Navbar img {
-    width: 7%;
-    margin: 0.8rem 0;
-    padding: 0;
-}
-
 .Navbar h1 {
     font-size: 1.25em;
     margin-left: 2rem;
@@ -240,67 +238,9 @@ li:active {
     opacity: 0.5;
 }
 
-.Sidebar {
-    display: none;
-    width: 100%;
-    height: 2.5rem;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 20px;
-}
+/* ~~~~~~ SIDEBAR ~~~~~~ */
 
 
-.Sidebar-items {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
-  }
-  
-  .Sidebar-items .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 40px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    display: flex;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .Sidebar-items {padding-top: 15px;}
-    .Sidebar-items a {font-size: 18px;}
-  }
-  
-  .Navs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
 
 .Landing-Page {
@@ -310,6 +250,7 @@ li:active {
 }
 
 .Landing-box {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -964,11 +905,11 @@ li:active {
 
 
 /* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     #land-bg,
     #land-bg2 {
         object-fit:none;
-        object-position: 78% 45%;
+        object-position: 70% 72%;
     }
   }
 
@@ -1047,10 +988,14 @@ li:active {
     .navbar-items {
         display: none;
     }
-    .Sidebar {
+    .Sidebar-container {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+    }
+    .Navbar {
+        height: 60px;
+        display: none;
     }
   }
 
