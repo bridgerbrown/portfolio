@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Contact from "./Contact"
 import { useState } from "react";
 import { useEffect } from "react";
+import '../App.css'
 
 function Home() {
     const [darkTheme, setDarkTheme] = useState(true)
