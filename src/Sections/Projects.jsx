@@ -1,7 +1,7 @@
 import React from 'react'
-import EcommerceProject from './Projects/EcommerceProject'
-import QuizProject from './Projects/QuizProject'
-import ThirdProject from './Projects/ThirdProject'
+import EcommerceProject from './Project-Previews/EcommerceProject'
+import QuizProject from './Project-Previews/QuizProject'
+import ThirdProject from './Project-Previews/ThirdProject'
 
 function Projects() {
     return(
