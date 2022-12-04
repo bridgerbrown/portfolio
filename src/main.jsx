@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './sections/Home.jsx'
+import Home from './Sections/Home.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
