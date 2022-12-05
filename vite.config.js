@@ -5,9 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    lib: {
+      entry: resolve(__dirname, 'index.html'),
+      name: pkg.name
+    },
     rollupOptions: {
       input: {
-        'entry-point-a': path.resolve(__dirname, 'src/main.jsx'),
+        'entry-point-a': path.resolve(__dirname, 'index.html'),
       }
     }
   }
