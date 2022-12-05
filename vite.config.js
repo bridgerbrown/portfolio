@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: index.html,
+      entry: 'portfolio-website/index.html',
       name: pkg.name
     },
     rollupOptions: {
       input: {
-        'entry-point-a': index.html,
+        'entry-point-a': 'portfolio-website/index.html',
       }
     }
   }
