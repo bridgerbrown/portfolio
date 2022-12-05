@@ -153,6 +153,13 @@ button {
     letter-spacing: 1.5px;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 /* ~~~~~~ NAVBAR ~~~~~~ */
 
 .Navs {
@@ -201,7 +208,7 @@ button {
     width:min-content;
 }
 
-a:link {
+.Navbar a:link {
     text-decoration: none;
     margin-left: 2rem;
 }
@@ -518,6 +525,30 @@ z-index: -1;
     color: var(--text-hover);
 }
 
+.bio-other-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0 2.5rem 0;
+}
+
+.bio-other-buttons button {
+    width: 45%;
+    min-width: 115px;
+    padding: 0.8rem 0;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Stigfier';
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bio-other-buttons button:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-hover);
+}
 
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
@@ -561,6 +592,7 @@ z-index: -1;
     font-size: 0.24em;
     margin-top: 11px;
 }
+
 
 
 /* ~~~~~~ WORK section ~~~~~~  */
@@ -668,7 +700,7 @@ z-index: -1;
     font-size: 1.3em;
     font-weight: 400;
     text-align: center;
-    margin: 2em auto 7rem auto;
+    margin: 0rem auto 12rem auto;
     opacity: 0.8;
 }
 

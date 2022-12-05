@@ -1,7 +1,7 @@
 import React from 'react'
 import EcommerceProject from './Project-Previews/EcommerceProject'
+import MartiniShotWebsite from './Project-Previews/MartiniShotWebsite'
 import QuizProject from './Project-Previews/QuizProject'
-import ThirdProject from './Project-Previews/ThirdProject'
 
 function Projects() {
     return(
@@ -14,6 +14,7 @@ function Projects() {
             <div className='Work-Container'>
                 <EcommerceProject />
                 <QuizProject />
+                <MartiniShotWebsite />
             </div>
             <div className='coming-soon'>
                 <h3>More coming soon...</h3>
