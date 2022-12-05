@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'index.html'),
+      entry: index.html,
       name: pkg.name
     },
     rollupOptions: {
       input: {
-        'entry-point-a': path.resolve(__dirname, 'index.html'),
+        'entry-point-a': index.html,
       }
     }
   }
