@@ -1,12 +1,24 @@
 import React from 'react'
 import Sidebar from './Sidebar'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Navbar(props) {
     const [sidebarOpen, setSideBarOpen] = useState(false);
     const handleViewSidebar = () => {
       setSideBarOpen(!sidebarOpen);
     };
+
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [darkNav, setDarkNav] = useState(props.darkTheme)
+    useEffect(() => {
+        if(props.darkTheme === true){
+            setDarkNav(true)
+        } else if (props.darkTheme === false) {
+            setDarkNav(false)
+        } else {
+            setDarkNav(prefersDarkScheme)
+        }
+    }, [props.darkTheme])
 
     return(
         <div className='Navs'>
@@ -26,7 +38,7 @@ function Navbar(props) {
                         </a>
                     <div className='Navbar-heading'>
                         {
-                            !props.darkLand ?
+                            darkNav ?
                             <img 
                                 src='./src/assets/sun.png' 
                                 alt='switch to light theme' 

@@ -6,49 +6,38 @@ import Navbar from './Navbar'
 import Skills from "./Skills";
 import Footer from './Footer'
 import Contact from "./Contact"
-import { useState } from "react";
-import { useEffect } from "react";
 import '../App.css'
+import { useState, useEffect } from "react";
 
 function Home() {
-    const [darkTheme, setDarkTheme] = useState(true)
-    const [darkLand, setDarkLand] = useState(true)
-    const [count, setCount] = useState(0)
-
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme == "dark") {
-      document.body.classList.toggle("light-theme");
-      setDarkTheme(true)
-      setCount(count + 1)
-    } else if (currentTheme == "light") {
-      document.body.classList.toggle("dark-theme");
-      setDarkTheme(false)
-      setCount(count + 1)
-    }
-    
-    function themeChange() {
-      if (prefersDarkScheme.matches) {
-        document.body.classList.toggle("light-theme");
-        setDarkTheme(true)
-        setCount(count + 1)
-      } else {
-        document.body.classList.toggle("dark-theme");
-        setDarkTheme(false)
-        setCount(count + 1)
-      }
-    };
+    const [darkTheme, setDarkTheme] = useState()
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    console.log(prefersDarkScheme)
 
     useEffect(() => {
-        setDarkLand(!darkLand)
-    }, [count])
+        if(prefersDarkScheme) {
+            document.body.classList.toggle("light-theme");
+            setDarkTheme(prefersDarkScheme)
+        } else {
+            document.body.classList.toggle("dark-theme");
+            setDarkTheme(prefersDarkScheme)
+        }
+    }, [])
 
-
+    function themeChange() {
+        if(prefersDarkScheme) {
+            document.body.classList.toggle("light-theme");
+            setDarkTheme(!darkTheme)
+        } else {
+            document.body.classList.toggle("dark-theme");
+            setDarkTheme(!darkTheme)
+        }
+    };
 
     return(
-        <div className="Home fade" id="home" key={darkTheme}>
-            <Navbar themeChange={themeChange} darkLand={darkLand} />
-            <Landing darkLand={darkLand} key={darkLand}/>
+        <div className="Home fade" id="home">
+            <Navbar themeChange={themeChange} darkTheme={darkTheme} />
+            <Landing darkTheme={darkTheme} />
             <About />
             <Skills />
             <Projects />

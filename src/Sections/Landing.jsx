@@ -1,8 +1,19 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'react'
 
 function Landing(props) {
-    console.log(props.darkLand)
+    const [darkLand, setDarkLand] = useState(props.darkTheme)
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    useEffect(() => {
+        if(props.darkTheme === true){
+            setDarkLand(true)
+        } else if (props.darkTheme === false) {
+            setDarkLand(false)
+        } else {
+            setDarkLand(prefersDarkScheme)
+        }
+    }, [props.darkTheme])
 
     return(
         <div className='Landing-Page'>
@@ -13,10 +24,10 @@ function Landing(props) {
                 </div>
                 <div className='landpages'>
                     {
-                        !props.darkLand ?
-                        <img src='./src/assets/wave-dark.jpg' key={props.darkLand} className="fade" id='land-bg'/>
+                        darkLand ?
+                        <img src='./src/assets/wave-dark.jpg' className="fade" id='land-bg'/>
                         :
-                        <img src='./src/assets/wave-light.jpg' key={props.darkLand} className="fade" id='land-bg2'/>
+                        <img src='./src/assets/wave-light.jpg' className="fade" id='land-bg2'/>
                     }
 
                 </div>
