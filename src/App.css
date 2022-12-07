@@ -563,6 +563,28 @@ z-index: -1;
     width: 90%;
 }
 
+.skills-container .section-line {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.currently-learning {
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    opacity: 0.87;
+}
+
+#currently-icon {
+    padding-right: 0.3rem;
+}
+
+.currently-learning span {
+    text-transform: uppercase;
+    padding-left: 0.3rem;
+}
+
 .skill-icons {
     font-size: 3.25em;
     display: flex;
@@ -596,7 +618,6 @@ z-index: -1;
     font-size: 0.24em;
     margin-top: 11px;
 }
-
 
 
 /* ~~~~~~ WORK section ~~~~~~  */
