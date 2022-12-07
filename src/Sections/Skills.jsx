@@ -5,8 +5,8 @@ function Skills() {
         <div className="skills-container Section-container">
             <div>
                 <div className='section-line'>
-                <img src="./src/assets/star1.png" className='swirls'/>
-                <h3 className='Section-Headers' id="skills-header">Skills</h3>
+                    <img src="./src/assets/star1.png" className='swirls'/>
+                    <h3 className='Section-Headers' id="skills-header">Skills</h3>
                 <img src="./src/assets/star1.png" className='swirls'/>
                 </div>
                 <p className="currently-learning">I am currently learning...
@@ -16,7 +16,6 @@ function Skills() {
                     </span>
                     .
                 </p>
-
             </div>
             <div className="skill-icons">
                 <div className="skill">          
