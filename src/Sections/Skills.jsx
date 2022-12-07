@@ -3,18 +3,21 @@ import React from "react";
 function Skills() {
     return(
         <div className="skills-container Section-container">
-            <div className='section-line'>
-              <img src="./src/assets/star1.png" className='swirls'/>
-              <h3 className='Section-Headers' id="skills-header">Skills</h3>
-              <img src="./src/assets/star1.png" className='swirls'/>
+            <div>
+                <div className='section-line'>
+                <img src="./src/assets/star1.png" className='swirls'/>
+                <h3 className='Section-Headers' id="skills-header">Skills</h3>
+                <img src="./src/assets/star1.png" className='swirls'/>
+                </div>
+                <p className="currently-learning">I am currently learning...
+                    <span>
+                        <i class="devicon-python-plain" id="currently-icon"></i>
+                        Python
+                    </span>
+                    .
+                </p>
+
             </div>
-            <p className="currently-learning">I am currently learning...
-                <span>
-                    <i class="devicon-python-plain" id="currently-icon"></i>
-                    Python
-                </span>
-                .
-            </p>
             <div className="skill-icons">
                 <div className="skill">          
                     <i class="devicon-javascript-plain"></i>
