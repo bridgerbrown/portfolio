@@ -359,6 +359,7 @@ li:active {
     margin: 0 auto 0rem auto;
     animation: left-to-right 1s ease-in-out forwards;
     opacity: 0;
+    font-weight: 400;
 }
 
 .Landing-Text h2 {
@@ -922,10 +923,10 @@ li:active {
   @font-face {
     font-family: Stigfier;
     src:
-         url('/../public/fonts/stigfier/Stigfier.woff') format('woff'),
-         url('/../public/fonts/stigfier/Stigfier.woff2') format('woff2'),
-         url('/../public/fonts/stigfier/Stigfier.ttf') format('truetype'),
-         url('/../public/fonts/stigfier/Stigfier.otf') format('opentype');
+         url('/fonts/stigfier/Stigfier.woff') format('woff'),
+         url('/fonts/stigfier/Stigfier.woff2') format('woff2'),
+         url('/fonts/stigfier/Stigfier.ttf') format('truetype'),
+         url('/fonts/stigfier/Stigfier.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

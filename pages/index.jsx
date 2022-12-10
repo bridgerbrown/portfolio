@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 function Home(props) {
     const [darkTheme, setDarkTheme] = useState()
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDarkScheme =  useEffect(() => {window.matchMedia('(prefers-color-scheme: dark)').matches;},[])
     console.log(prefersDarkScheme)
 
     useEffect(() => {
