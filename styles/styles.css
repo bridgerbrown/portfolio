@@ -32,6 +32,7 @@ body {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
     --theme-switch-icon-src: url(../public/sun.png);
+    --sidebar-button-bg: #cfd0d3;
     }
 }
 
@@ -47,6 +48,7 @@ body.light-theme {
 --nav-hover: #7a7a7a;
 --landing-src: url("../public/wave-light.jpg");
 --theme-switch-icon-src: url(../public/moon.png);
+--sidebar-button-bg: #0c0c0c;
 }
 
 @media (prefers-color-scheme: light) {
@@ -62,6 +64,7 @@ body {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-light.jpg");
     --theme-switch-icon-src: url(../public/moon.png);
+    --sidebar-button-bg: #0c0c0c;
     }
 }
 
@@ -77,6 +80,7 @@ body.dark-theme {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
     --theme-switch-icon-src: url(../public/sun.png);
+    --sidebar-button-bg: #cfd0d3;
 }
 
 /* Fonts */
@@ -239,7 +243,7 @@ li:active {
 
 .Navbar-heading img {
     margin-left: 2rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -277,7 +281,8 @@ li:active {
     right: 0px;
     z-index: 1;
     border: none;
-    background-color: var(--btn-color);
+    background-color: var(--sidebar-button-bg);
+    color: var(--bkg-color);
     font-size: 2.5em;
     display: flex;
     justify-content: center;
@@ -1025,6 +1030,7 @@ li:active {
         width: 100vw;
         height: 64.5px;
         background-color: var(--btn-color);
+        opacity: 0.95
       }
   }
 
