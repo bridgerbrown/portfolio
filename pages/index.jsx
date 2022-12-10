@@ -6,25 +6,23 @@ import Navbar from '../components/Navbar'
 import Skills from "../components/Skills";
 import Footer from '../components/Footer'
 import Contact from "../components/Contact"
-import styles from '../styles/app.module.css'
 import { useState, useEffect } from "react";
 import {Head} from 'next/head';
-import styles from '../styles/app.module.css'
 
 function Home() {
     const [darkTheme, setDarkTheme] = useState()
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    console.log(prefersDarkScheme)
+    // const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // console.log(prefersDarkScheme)
 
-    useEffect(() => {
-        if(prefersDarkScheme) {
-            document.body.classList.toggle("light-theme");
-            setDarkTheme(prefersDarkScheme)
-        } else {
-            document.body.classList.toggle("dark-theme");
-            setDarkTheme(prefersDarkScheme)
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(prefersDarkScheme) {
+    //         document.body.classList.toggle("light-theme");
+    //         setDarkTheme(prefersDarkScheme)
+    //     } else {
+    //         document.body.classList.toggle("dark-theme");
+    //         setDarkTheme(prefersDarkScheme)
+    //     }
+    // }, [])
 
     function themeChange() {
         if(prefersDarkScheme) {

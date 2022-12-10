@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/app.module.css'
+import Image from 'next/image'
 
 function MartiniShotWebsite() {
 return(
@@ -7,7 +7,7 @@ return(
         <div className={styles["project-single-container"]}>
             <div className={styles["project-img"]}>
                 <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
-                    <img src='./src/assets/martini-shot-preview.jpg' alt="martini shot project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
+                    <Image src='.../public/martini-shot-preview.jpg' alt="martini shot project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
                 </a>
             </div>
             <div className={`${styles["Work-Details"]} ${styles["reveal-right"]}`}>

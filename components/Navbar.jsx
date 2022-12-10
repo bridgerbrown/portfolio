@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import { useState } from 'react';
-import styles from '../styles/app.module.css'
+import Image from 'next/image';
 
 function Navbar(props) {
     const [sidebarOpen, setSideBarOpen] = useState(false);
@@ -25,8 +25,8 @@ function Navbar(props) {
                             <li>Contact</li>
                         </a>
                     <div className={styles["Navbar-heading"]}>
-                        <img 
-                            src='./src/assets/moon.png' 
+                        <Image 
+                            src='../public/moon.png' 
                             alt='switch to dark theme'
                             onClick={props.themeChange}
                             id='theme-switch-icon'

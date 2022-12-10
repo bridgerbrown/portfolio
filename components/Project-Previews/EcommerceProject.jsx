@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from '../styles/app.module.css'
+import Image from 'next/image';
 
 function EcommerceProject() {
     return(
         <>
             <div className={styles["project-single-container"]}>
                 <div className={styles["project-img"]}>
-                    <img src='./src/assets/ecommerce-preview.png' alt="ecommerce preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
+                    <Image src='.../public/ecommerce-preview.png' alt="ecommerce preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
                 </div>
                 <div className={`${styles["Work-Details"]} ${styles["reveal-right"]}`}>
                     <div className={styles["project-text"]}>

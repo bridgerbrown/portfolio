@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from '../styles/app.module.css'
+import Image from 'next/image'
 
 function QuizProject() {
     return(
         <>
             <div className={styles["project-single-container"]}>
                 <div className={styles["project-img"]}>
-                    <img src='./src/assets/quizzical-preview.png' alt="quiz project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
+                    <Image src='.../public/quizzical-preview.png' alt="quiz project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
                 </div>
                 <div className={`${styles["Work-Details"]} ${styles["reveal-right"]}`}>
                     <div className={styles["project-text"]}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/app.module.css'
+import Image from 'next/image'
 
 function Landing() {
     return(
@@ -10,7 +10,7 @@ function Landing() {
                     <h2>Front-End Web Developer + Designer</h2>
                 </div>
                 <div className={styles["landpages"]}>
-                    <img src='./src/assets/wave-dark.jpg' className={styles["fade"]} id='land-bg'/>
+                    <Image src='../public/wave-dark.jpg' className={styles["fade"]} id='land-bg'/>
                 </div>
             </div>
         </div>

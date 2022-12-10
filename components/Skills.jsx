@@ -1,14 +1,14 @@
 import React from "react";
-import styles from '../styles/app.module.css'
+import Image from "next/image";
 
 function Skills() {
     return(
         <div className={`${styles["skills-container"]} ${styles["Section-container"]}`}>
             <div>
                 <div className={styles["section-line"]}>
-                    <img src="./src/assets/star1.png" className={styles["swirls"]}/>
+                    <Image src="../public/star1.png" className={styles["swirls"]}/>
                     <h3 className={styles["Section-Headers"]} id="skills-header">Skills</h3>
-                <img src="./src/assets/star1.png" className={styles["swirls"]}/>
+                <Image src="../public/star1.png" className={styles["swirls"]}/>
                 </div>
                 <p className={styles["currently-learning"]}>I am currently learning...
                     <span>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/app.module.css'
+import Image from 'next/image';
 
 function About() {
   function revealLeft() {
@@ -40,12 +40,12 @@ function About() {
     <>
         <div className={`${styles["Bio-Container"]} ${styles["Section-container"]}`} id="bio">
           <div className={styles["section-line"]}>
-            <img src="./src/assets/star1.png" className={styles["swirls"]}/>
+            <Image src="../public/star1.png" className={styles["swirls"]}/>
             <h3 className='Section-Headers'>About</h3>
-            <img src="./src/assets/star1.png" className={styles["swirls"]}/>
+            <Image src="../public/star1.png" className={styles["swirls"]}/>
           </div>
           <div className={styles["Bio"]}>  
-              <img src="./src/assets/B-cortona-gray.png" alt="bridger-headshot" className={styles["reveal-left"]} id='bio-img'/>
+              <Image src="../public/B-cortona-gray.png" alt="bridger-headshot" className={styles["reveal-left"]} id='bio-img'/>
               <div className={`${styles["Bio-items"]} ${styles["reveal-right"]}`}>                    
                   <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon. 
                       I have experience in Graphic Design which allows me to see websites through a designers eye.
@@ -61,13 +61,13 @@ function About() {
                   </div> */}
                   <div className={styles["resume-section"]}>
                     <a href='https://www.linkedin.com/in/bridger-brown/' target="_blank" rel="noopener noreferrer" >
-                      <img src="../src/assets/LinkedIN_black.png" alt="LinkedIN icon" className={styles["Social-Icons"]}/>
+                      <Image src="../public/LinkedIN_black.png" alt="LinkedIN icon" className={styles["Social-Icons"]}/>
                     </a>
                     <a href='https://github.com/bridgerbrown' target="_blank" rel="noopener noreferrer" >
-                      <img src="../src/assets/Github_black.png" alt="Github icon"className={styles["Social-Icons"]}/>
+                      <Image src="../public/Github_black.png" alt="Github icon"className={styles["Social-Icons"]}/>
                     </a>
                     <a href='https://www.instagram.com/bridger.brown/' target="_blank" rel="noopener noreferrer" > 
-                      <img src="../src/assets/Instagram_black.png" alt="Instagram icon"className={styles["Social-Icons"]}/>
+                      <Image src="../public/Instagram_black.png" alt="Instagram icon"className={styles["Social-Icons"]}/>
                     </a>
                     <button>Resume</button>
                   </div>
