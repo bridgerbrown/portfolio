@@ -7,22 +7,21 @@ import Skills from "../components/Skills";
 import Footer from '../components/Footer'
 import Contact from "../components/Contact"
 import { useState, useEffect } from "react";
-import {Head} from 'next/head';
 
-function Home() {
+function Home(props) {
     const [darkTheme, setDarkTheme] = useState()
-    // const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // console.log(prefersDarkScheme)
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    console.log(prefersDarkScheme)
 
-    // useEffect(() => {
-    //     if(prefersDarkScheme) {
-    //         document.body.classList.toggle("light-theme");
-    //         setDarkTheme(prefersDarkScheme)
-    //     } else {
-    //         document.body.classList.toggle("dark-theme");
-    //         setDarkTheme(prefersDarkScheme)
-    //     }
-    // }, [])
+    useEffect(() => {
+        if(prefersDarkScheme) {
+            document.body.classList.toggle("light-theme");
+            setDarkTheme(prefersDarkScheme)
+        } else {
+            document.body.classList.toggle("dark-theme");
+            setDarkTheme(prefersDarkScheme)
+        }
+    }, [])
 
     function themeChange() {
         if(prefersDarkScheme) {
@@ -36,10 +35,7 @@ function Home() {
 
     return(
         <>
-            <Head>
-                <title>Bridger Brown</title>
-            </Head>
-            <div className={`${styles.Home} ${styles.fade}`} id="home">
+            <div className="Home fade" id="home">
                 <Navbar themeChange={themeChange} darkTheme={darkTheme} />
                 <Landing darkTheme={darkTheme} />
                 <About />

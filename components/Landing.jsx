@@ -3,17 +3,25 @@ import Image from 'next/image'
 
 function Landing() {
     return(
-        <div className={styles["Landing-Page"]}>
-            <div className={styles["Landing-box"]}>
-                <div className={styles["Landing-Text"]}>
+    <>
+        <div className='Landing-Page'>
+            <div className='Landing-box'>
+                <div className='Landing-Text'>
                     <h1>Bridger Brown</h1>
                     <h2>Front-End Web Developer + Designer</h2>
                 </div>
-                <div className={styles["landpages"]}>
-                    <Image src='../public/wave-dark.jpg' className={styles["fade"]} id='land-bg'/>
+                <div className='landpages'>
+                    <Image 
+                        src='/../public/wave-dark.jpg' 
+                        className="fade" 
+                        id='land-bg'
+                        width="4000"
+                        height="2860"
+                        />
                 </div>
             </div>
         </div>
+    </>
     )
 }
 

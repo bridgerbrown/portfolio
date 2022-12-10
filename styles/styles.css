@@ -10,7 +10,7 @@ body {
     padding: 0;    
     background-color: var(--bkg-color);
     color: var(--text-color);
-    font-family: 'Stigfier';
+    font-family: Stigfier;
     animation: fade 5sec;
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 .Headers-Right {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .Headers-Center {
@@ -178,7 +178,7 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .navbar-items {
@@ -238,7 +238,6 @@ li:active {
 }
 
 .Navbar-heading img {
-    width: 25;
     margin-left: 2rem;
     margin-right: 0.5rem;
     cursor: pointer;
@@ -352,7 +351,7 @@ li:active {
 }
 
 .Landing-Text h1 {
-    font-family: 'Stigfier';
+    font-family: Stigfier;
     text-transform: uppercase;
     font-size: 4em;
     letter-spacing: 2px;
@@ -363,7 +362,7 @@ li:active {
 }
 
 .Landing-Text h2 {
-    font-family: 'Stigfier';
+    font-family: Stigfier;
     font-size: 1.5em;
     letter-spacing: 1.75px;
     padding: 0;
@@ -453,7 +452,7 @@ li:active {
     width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .Bio img {
@@ -519,7 +518,7 @@ li:active {
     border-radius: 3px;
     background-color: var(--btn-color);
     color: var(--btn-text-color);
-    font-family: 'Stigfier';
+    font-family: Stigfier;
 }
 
 .resume-section button:hover {
@@ -541,7 +540,7 @@ li:active {
     background-color: var(--btn-color);
     border: none;
     border-radius: 3px;
-    font-family: 'Stigfier';
+    font-family: Stigfier;
     font-size: 1em;
     font-weight: 800;
     text-align: center;
@@ -635,7 +634,8 @@ li:active {
 }
 
 .Work-Preview {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     object-fit: cover;
     border-radius: 5px;
@@ -681,7 +681,7 @@ li:active {
 .project-text h4 {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
     margin-bottom: 1rem;
@@ -708,7 +708,7 @@ li:active {
     border-radius: 3px;
     background-color: var(--btn-color);
     color: var(--btn-text-color);
-    font-family: 'Stigfier';
+    font-family: Stigfier;
 }
 
 .project-single-container button:hover {
@@ -819,7 +819,7 @@ li:active {
     border-radius: 3px;
     background-color: var(--btn-color);
     color: var(--btn-text-color);
-    font-family: 'Stigfier';
+    font-family: Stigfier;
 }
 
 .contact-items button:hover {
@@ -857,7 +857,7 @@ li:active {
     border-radius: 3px;
     background-color: var(--btn-color);
     color: var(--btn-text-color);
-    font-family: 'Stigfier';
+    font-family: Stigfier;
 }
 
 .contact-icons button:hover {
@@ -918,6 +918,18 @@ li:active {
     opacity: 1;
   }
 
+/* ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~  */
+  @font-face {
+    font-family: Stigfier;
+    src:
+         url('/../public/fonts/stigfier/Stigfier.woff') format('woff'),
+         url('/../public/fonts/stigfier/Stigfier.woff2') format('woff2'),
+         url('/../public/fonts/stigfier/Stigfier.ttf') format('truetype'),
+         url('/../public/fonts/stigfier/Stigfier.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
 @media screen and (max-width: 1200px) {

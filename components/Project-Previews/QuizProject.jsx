@@ -4,22 +4,28 @@ import Image from 'next/image'
 function QuizProject() {
     return(
         <>
-            <div className={styles["project-single-container"]}>
-                <div className={styles["project-img"]}>
-                    <Image src='.../public/quizzical-preview.png' alt="quiz project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
+            <div className='project-single-container'>
+                <div className='project-img'>
+                    <Image 
+                        src='/./../public/quizzical-preview.png' 
+                        alt="quiz project preview" 
+                        className='Work-Preview reveal-left'
+                        width="1280"
+                        height="960"
+                        />
                 </div>
-                <div className={`${styles["Work-Details"]} ${styles["reveal-right"]}`}>
-                    <div className={styles["project-text"]}>
+                <div className='Work-Details reveal-right'>
+                <div className='project-text'>
                     <h4>Quiz App</h4>
                     <p>
                         A trivia question game with multiple categories and difficulties that uses the data of Open Trivia Database API,
                         this project started out as a part of the Scrimba Front-End Developer Career Path but was fleshed out more on its own. 
                     </p>
                     </div>
-                    <div className={styles["project-buttons"]}>
-                        <button className={`${styles["ReadMore"]}`}>Preview</button>
+                    <div className='project-buttons'>
+                        <button className='ReadMore'>Preview</button>
                         <a href='https://github.com/bridgerbrown/quiz-app-project' target="_blank" rel="noopener noreferrer">
-                            <button className={`${styles["ReadMore"]}`}>Github</button>
+                            <button className='ReadMore'>Github</button>
                         </a>
                     </div>    
                 </div>

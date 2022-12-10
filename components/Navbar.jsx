@@ -9,10 +9,11 @@ function Navbar(props) {
       setSideBarOpen(!sidebarOpen);
     };
     return(
-        <div className={styles["Navs"]}>
-            <div className={styles["left-of-nav"]}></div>
-            <div className={styles["Navbar"]}>
-                <div className={styles["navbar-items"]}>
+    <>
+        <div className='Navs'>
+            <div className='left-of-nav'></div>
+            <div className='Navbar'>
+                <div className='navbar-items'>
                         <a href="#bio">
                             <li>About</li>
                         </a>
@@ -24,18 +25,21 @@ function Navbar(props) {
                         <a href="#contact">
                             <li>Contact</li>
                         </a>
-                    <div className={styles["Navbar-heading"]}>
+                    <div className='Navbar-heading'>
                         <Image 
-                            src='../public/moon.png' 
+                            src='/../public/moon.png' 
                             alt='switch to dark theme'
                             onClick={props.themeChange}
                             id='theme-switch-icon'
+                            width="25"
+                            height="25"
                         />
                     </div>
                 </div>
             </div>
-            <Sidebar isOpen={sidebarOpen} toggleSidebar={handleViewSidebar} styles={styles} />
+            <Sidebar isOpen={sidebarOpen} toggleSidebar={handleViewSidebar} />
         </div>
+    </>
     )
 }  
 

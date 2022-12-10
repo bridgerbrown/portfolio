@@ -4,14 +4,20 @@ import Image from 'next/image'
 function MartiniShotWebsite() {
 return(
     <>
-        <div className={styles["project-single-container"]}>
-            <div className={styles["project-img"]}>
+        <div className='project-single-container'>
+            <div className='project-img'>
                 <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
-                    <Image src='.../public/martini-shot-preview.jpg' alt="martini shot project preview" className={`${styles["Work-Preview"]} ${styles["reveal-left"]}`}/>
+                    <Image 
+                        src='/./../public/martini-shot-preview.jpg' 
+                        alt="martini shot project preview" 
+                        className='Work-Preview reveal-left'
+                        width="1280"
+                        height="960"
+                        />
                 </a>
             </div>
-            <div className={`${styles["Work-Details"]} ${styles["reveal-right"]}`}>
-                <div className={styles["project-text"]}>
+            <div className='Work-Details reveal-right'>
+                <div className='project-text'>
                     <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                         <h4>Martini Shot Podcast Website</h4>
                     </a>
@@ -21,11 +27,11 @@ return(
                         <br></br>
                         In addition to managing the website, I am also the audio producer/editor and designed the Martini Shot logo.</p>
                 </div>
-                <div className={styles["project-buttons"]}>
+                <div className='project-buttons'>
                 <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
-                    <button className={`${styles["ReadMore"]}`}>Preview</button>
+                    <button className='ReadMore'>Preview</button>
                 </a>
-            </div>    
+                </div>    
             </div>
         </div>
     </>

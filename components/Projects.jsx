@@ -7,21 +7,33 @@ import Image from 'next/image'
 
 function Projects() {
     return(
-        <div className={styles["Section-Container"]} id="projects">
-            <div className={styles["section-line"]}>
-                <Image src="../public/star1.png" className={styles["swirls"]}/>
-                <h3 className={styles["Section-Headers"]}>Projects</h3>
-                <Image src="../public/star1.png" className={styles["swirls"]}/>
+        <>
+            <div className='Section-Container' id="projects">
+                <div className='section-line'>
+                <Image 
+                    src="/../public/star1.png" 
+                    className="swirls"
+                    width="25"
+                    height="25"
+                />  
+                    <h3 className='Section-Headers'>Projects</h3>
+                <Image 
+                    src="/../public/star1.png" 
+                    className="swirls"
+                    width="25"
+                    height="25"
+                />
+                </div>
+                <div className='Work-Container'>
+                    <EcommerceProject />
+                    <QuizProject />
+                    <MartiniShotWebsite />
+                </div>
+                <div className='coming-soon'>
+                    <h3>More coming soon...</h3>
+                </div>
             </div>
-            <div className={styles["Work-Container"]}>
-                <EcommerceProject />
-                <QuizProject />
-                <MartiniShotWebsite />
-            </div>
-            <div className={styles["coming-soon"]}>
-                <h3>More coming soon...</h3>
-            </div>
-        </div>
+        </>
     )
 }
 
