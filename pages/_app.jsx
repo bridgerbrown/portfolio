@@ -1,5 +1,5 @@
-import Head from "next/head";
 import "../styles/styles.css";
+import React from "react";
 
 
 export default function MyApp({ Component, pageProps }) {
