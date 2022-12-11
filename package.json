@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx next dev",
     "build": "npx next build",
-    "start": "npx next start"
+    "start": "npx next start",
+    "prod": "npx next export"
   },
   "dependencies": {
     "@glidejs/glide": "3.5.2",
