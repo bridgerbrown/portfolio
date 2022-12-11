@@ -57,13 +57,13 @@ function About() {
               />
           </div>
           <div className="Bio">  
-              <img
-                src="/../public/B-cortona-gray.png" 
-                alt="bridger-headshot" 
+              <Image 
+                src={"cortona-headshot.png"}
+                alt="bridger headshot" 
                 className='reveal-left' 
                 id='bio-img'
-                width="352"
-                height="352"
+                width={352}
+                height={352}
                 />
               <div className="Bio-items reveal-right">                    
                   <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon. 
