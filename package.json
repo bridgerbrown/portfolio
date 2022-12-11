@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npx next dev",
     "build": "npx next build",
-    "start": "next start"
+    "start": "npx next start"
   },
   "dependencies": {
     "@glidejs/glide": "3.5.2",
