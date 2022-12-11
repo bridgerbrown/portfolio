@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
 import { useEffect } from 'react';
-import cortona from '/../public/cortona-headshot.png'
 
 function About() {
   function revealLeft() {
@@ -58,8 +57,8 @@ function About() {
               />
           </div>
           <div className="Bio">  
-              <Image 
-                src={cortona}
+              <img
+                src="/../public/B-cortona-gray.png" 
                 alt="bridger-headshot" 
                 className='reveal-left' 
                 id='bio-img'
