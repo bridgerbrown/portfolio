@@ -8,11 +8,11 @@ return(
             <div className='project-img'>
                 <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                     <Image 
-                        src='/./../public/martini-shot-preview.jpg' 
+                        src={'martini-shot-preview.jpg'}
                         alt="martini shot project preview" 
                         className='Work-Preview reveal-left'
-                        width="1280"
-                        height="960"
+                        width={1280}
+                        height={960}
                         />
                 </a>
             </div>

@@ -7,17 +7,17 @@ function Skills() {
             <div>
                 <div className='section-line'>
                     <Image 
-                        src="/../public/star1.png" 
+                        src={"star1.png"} 
                         className="swirls"
-                        width="25"
-                        height="25"
+                        width={25}
+                        height={25}
                     />
                     <h3 className='Section-Headers' id="skills-header">Skills</h3>
                     <Image 
-                        src="/../public/star1.png" 
+                        src={"star1.png"} 
                         className="swirls"
-                        width="25"
-                        height="25"
+                        width={25}
+                        height={25}
                     />
                 </div>
                 <p className="currently-learning">I am currently learning...

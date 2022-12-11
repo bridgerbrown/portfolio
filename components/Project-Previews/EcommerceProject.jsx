@@ -7,11 +7,11 @@ function EcommerceProject() {
             <div className='project-single-container'>
                 <div className='project-img'>
                     <Image 
-                        src='/./../public/ecommerce-preview.png' 
+                        src={'ecommerce-preview.png' }
                         alt="ecommerce preview" 
                         className='Work-Preview reveal-left'
-                        width="1280"
-                        height="960"
+                        width={1280}
+                        height={960}
                         />
                 </div>
                 <div className='Work-Details reveal-right'>
