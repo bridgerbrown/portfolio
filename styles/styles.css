@@ -31,6 +31,7 @@ body {
     --text-hover: white;
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
+    --go-top-src: url("../public/go-top-light.svg");
     --theme-switch-icon-src: url(../public/sun.png);
     --sidebar-button-bg: #cfd0d3;
     }
@@ -47,6 +48,7 @@ body.light-theme {
 --text-hover: black;
 --nav-hover: #7a7a7a;
 --landing-src: url("../public/wave-light.jpg");
+--go-top-src: url("../public/go-top-dark.svg");
 --theme-switch-icon-src: url(../public/moon.png);
 --sidebar-button-bg: #0c0c0c;
 }
@@ -63,6 +65,7 @@ body {
     --text-hover: black;
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-light.jpg");
+    --go-top-src: url("../public/go-top-dark.svg");
     --theme-switch-icon-src: url(../public/moon.png);
     --sidebar-button-bg: #0c0c0c;
     }
@@ -79,6 +82,7 @@ body.dark-theme {
     --text-hover: white;
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
+    --go-top-src: url("../public/go-top-light.svg");
     --theme-switch-icon-src: url(../public/sun.png);
     --sidebar-button-bg: #cfd0d3;
 }
@@ -924,6 +928,29 @@ li:active {
     opacity: 1;
   }
 
+/* ~~~~~~~~~~~~ Back to top button ~~~~~~~~~~~~  */
+
+.goTopHidden {
+    display: none;
+}
+
+.goTop__text  {
+    display:block;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    content: var(--go-top-src);
+    opacity: 0.9;
+}
+
+.goTop__text:hover {
+    opacity: 1;
+}
+
+
 /* ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~  */
   @font-face {
     font-family: Stigfier;
@@ -945,6 +972,12 @@ li:active {
         object-position: 70% 72%;
     }
   }
+
+@media screen and (max-width: 1000px) {
+  .goTop__text  {
+    right: 1.5rem;
+    }
+}
 
   @media screen and (max-width: 1150px) {
     .skills-container {

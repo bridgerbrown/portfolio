@@ -1,19 +1,20 @@
 import React from "react";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Landing from "../components/Landing";
-import Navbar from '../components/Navbar'
-import Skills from "../components/Skills";
-import Footer from '../components/Footer'
-import Contact from "../components/Contact"
-import { useState, useEffect } from "react";
+import About from "../components/sections/About";
+import Projects from "../components/sections/Projects";
+import Landing from "../components/sections/Landing";
+import Navbar from '../components/features/Navbar'
+import Skills from "../components/sections/Skills";
+import Footer from '../components/sections/Footer'
+import Contact from "../components/sections/Contact"
+import { useState, useEffect, useRef } from "react";
+import GoTop from "../components/features/GoTop";
 
-function Home(props) {
+function Home() {
     const [darkTheme, setDarkTheme] = useState()
-    const prefersDarkScheme =  useEffect(() => {window.matchMedia('(prefers-color-scheme: dark)').matches;},[])
-    console.log(prefersDarkScheme)
 
-    useEffect(() => {
+    useEffect(() => {   
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+
         if(prefersDarkScheme) {
             document.body.classList.toggle("light-theme");
             setDarkTheme(prefersDarkScheme)
@@ -21,10 +22,10 @@ function Home(props) {
             document.body.classList.toggle("dark-theme");
             setDarkTheme(prefersDarkScheme)
         }
-    }, [])
+    },[darkTheme] )
 
     function themeChange() {
-        if(prefersDarkScheme) {
+        if(darkTheme) {
             document.body.classList.toggle("light-theme");
             setDarkTheme(!darkTheme)
         } else {
@@ -33,11 +34,14 @@ function Home(props) {
         }
     };
 
+    const refScrollUp = useRef();
+
     return(
         <>
-            <div className="Home fade" id="home">
-                <Navbar themeChange={themeChange} darkTheme={darkTheme} />
-                <Landing darkTheme={darkTheme} />
+            <div className="Home fade" id="home" ref={refScrollUp}>
+                <Navbar themeChange={themeChange} />
+                <GoTop />
+                <Landing />
                 <About />
                 <Skills />
                 <Projects />
