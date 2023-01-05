@@ -59,7 +59,10 @@ function Skills() {
                 </div>
                 <div className="skill">       
                     <i class="devicon-vim-plain"></i>
-                    <p>VIM</p>
+                    <p>
+                        VIM
+                        MOTIONS
+                    </p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-photoshop-plain"></i>

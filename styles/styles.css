@@ -659,7 +659,7 @@ li:active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10rem;
+    padding-top: 2rem;
 }
 
 .Work-Details {
@@ -699,6 +699,11 @@ li:active {
     letter-spacing: 1.25px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.project-description span {
+    font-weight: 900;
+    border-bottom: 0.5px solid black;
 }
 
 .project-text h4:hover {
@@ -761,7 +766,7 @@ li:active {
 } 
 
 #projects {
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 
 .Project-Container {

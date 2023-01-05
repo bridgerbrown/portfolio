@@ -17,14 +17,17 @@ function EcommerceProject() {
                 <div className='Work-Details reveal-right'>
                     <div className='project-text'>
                     <h4>eCommerce app</h4>
-                    <p>
-                        An eCommerce website using paintings from the Art Institute of Chicago's public API as products, this project uses such technology as 
-                        React Router, React Context, Firebase Database, and Firestore User Authentication.
+                    <p className='project-description'>
+                        A demo eCommerce website with features such as a database of dynamically updating products, cart functionality, and email user authentication.
+                        <br/>
+                        <br/>
+                        This project was made using <span>React</span>, <span>NextJS</span> (server-side and static rendering), <span>Firestore</span> database, <span>Firebase</span> user authentication and 
+                        the art database of the <span>Art Institute of Chicago's public API</span>. 
                     </p>
                     </div>
                     <div className='project-buttons'>
-                        <a>
-                        <button className='ReadMore'>Preview</button>
+                        <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                            <button className='ReadMore'>Preview</button>
                         </a>
                         <a href='https://github.com/bridgerbrown/ecommerce-basic' target="_blank" rel="noopener noreferrer">
                             <button className='ReadMore'>Github</button>
