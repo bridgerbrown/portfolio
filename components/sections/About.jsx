@@ -40,7 +40,7 @@ function About() {
 
   return(
     <>
-      <div className='Bio-Container Section-container' id="bio">
+      <div className='Bio-Container' id="bio">
           <div className='section-line'>
             <Image 
               src={"/star1.png"} 
@@ -66,13 +66,16 @@ function About() {
                 height={352}
                 />
               <div className="Bio-items reveal-right">                    
-                  <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon. 
-                      I have experience in Graphic Design which allows me to see websites through a designers eye.
-                      Websites are an interactive art form and I am passionate about creating that experience.
+                  <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon.
+                  <br></br>
+                      <br></br> 
+                      Websites are an interactive art form and I am passionate about creating that experience through a designers eye.
+                      I love working towards the pursuit of mastery in whatever I pursue and with the
+                      deep ceiling for growth and possibilities, I enjoy developing my craft in programming.
                       <br></br>
                       <br></br>
                       I am also a musician that graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
-                      I am very passionate in music, art, keyboards, and self-improvement.
+                      I am very passionate about music, art, keyboards, and self-improvement.
                   </p>
                   {/* <div className='bio-other-buttons'>
                     <button>Education</button>
@@ -106,7 +109,7 @@ function About() {
                         height={38}
                         />
                     </a>
-                    <button>Resume</button>
+                    {/* <button>Resume</button> */}
                   </div>
               </div> 
           </div>

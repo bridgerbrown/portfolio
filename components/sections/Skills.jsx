@@ -46,6 +46,10 @@ function Skills() {
                     <p>CSS</p>
                 </div>
                 <div className="skill">       
+                    <i class="devicon-typescript-original"></i>
+                    <p>TYPESCRIPT</p>
+                </div>
+                <div className="skill">       
                     <i class="devicon-nextjs-original"></i>
                     <p>NEXT.JS</p>
                 </div>
@@ -58,13 +62,6 @@ function Skills() {
                     <p>GIT</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-vim-plain"></i>
-                    <p>
-                        VIM
-                        MOTIONS
-                    </p>
-                </div>
-                <div className="skill">       
                     <i class="devicon-photoshop-plain"></i>
                     <p>PHOTOSHOP</p>
                 </div>
@@ -73,12 +70,12 @@ function Skills() {
                     <p>ILLUSTRATOR</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-wordpress-plain"></i>
-                    <p>WORDPRESS</p>
+                    <i class="devicon-aftereffects-plain"></i>
+                    <p>AFTER EFFECTS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-figma-plain"></i>
-                    <p>FIGMA</p>
+                    <i class="devicon-wordpress-plain"></i>
+                    <p>WORDPRESS</p>
                 </div>
             </div>
         </div>

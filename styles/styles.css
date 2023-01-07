@@ -451,10 +451,10 @@ li:active {
 }
 
 .Bio {
-    width: 50vw;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+    max-width: 80vw;
 }
 
 .Bio-items {
@@ -608,7 +608,7 @@ li:active {
 }
 
 .skill-icons i:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .skill-icons p {
