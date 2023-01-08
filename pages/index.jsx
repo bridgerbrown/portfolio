@@ -39,7 +39,7 @@ function Home() {
     return(
         <>
             <div className="Home fade" id="home" ref={refScrollUp}>
-                <Navbar themeChange={themeChange} />
+                <Navbar themeChange={themeChange} /> 
                 <GoTop />
                 <Landing />
                 <About />

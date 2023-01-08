@@ -32,7 +32,8 @@ body {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
     --go-top-src: url("../public/go-top-light.svg");
-    --theme-switch-icon-src: url(../public/sun.png);
+    --theme-switch-icon-src: url(../public/sun-small.png);
+    --sidebar-theme-switch: url(../public/moon-small.png);
     --sidebar-button-bg: #cfd0d3;
     }
 }
@@ -49,7 +50,8 @@ body.light-theme {
 --nav-hover: #7a7a7a;
 --landing-src: url("../public/wave-light.jpg");
 --go-top-src: url("../public/go-top-dark.svg");
---theme-switch-icon-src: url(../public/moon.png);
+--theme-switch-icon-src: url(../public/moon-small.png);
+--sidebar-theme-switch: url(../public/sun-small.png);
 --sidebar-button-bg: #0c0c0c;
 }
 
@@ -66,7 +68,8 @@ body {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-light.jpg");
     --go-top-src: url("../public/go-top-dark.svg");
-    --theme-switch-icon-src: url(../public/moon.png);
+    --theme-switch-icon-src: url(../public/moon-small.png);
+    --sidebar-theme-switch: url(../public/sun-small.png);
     --sidebar-button-bg: #0c0c0c;
     }
 }
@@ -83,7 +86,8 @@ body.dark-theme {
     --nav-hover: #7a7a7a;
     --landing-src: url("../public/wave-dark.jpg");
     --go-top-src: url("../public/go-top-light.svg");
-    --theme-switch-icon-src: url(../public/sun.png);
+    --theme-switch-icon-src: url(../public/sun-small.png);
+    --sidebar-theme-switch: url(../public/moon-small.png);
     --sidebar-button-bg: #cfd0d3;
 }
 
@@ -251,13 +255,30 @@ li:active {
     cursor: pointer;
 }
 
+.sidebar-heading img {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
 .Navbar-heading img:hover {
+    margin-left: 2rem;
+    opacity: 0.5;
+}
+
+.sidebar-heading img:hover {
     margin-left: 2rem;
     opacity: 0.5;
 }
 
 #theme-switch-icon {
     content: var(--theme-switch-icon-src);
+}
+
+#sidebar-switch-icon {
+    content: var(--sidebar-theme-switch);
 }
 
 /* ~~~~~~ SIDEBAR ~~~~~~ */
@@ -272,7 +293,7 @@ li:active {
     top: 64.5px;
     right: 0;
     height: 100%;
-    width: 33vw;
+    width: 100vw;
     transition: left 0.3s ease-in-out;
     background-color: var(--btn-color);
     z-index: 2;
@@ -336,6 +357,10 @@ li:active {
 
   .sidebar-toggle:hover {
     background-color: var(--text-color);
+  }
+
+  .sidebar-heading {
+    display: none;
   }
   
 /* ~~~~~~ LANDING PAGE section ~~~~~~ */
@@ -973,7 +998,7 @@ li:active {
 @media screen and (max-width: 1200px) {
     #land-bg,
     #land-bg2 {
-        object-fit:none;
+        object-fit:cover;
         object-position: 70% 72%;
     }
   }
@@ -984,16 +1009,6 @@ li:active {
     }
 }
 
-  @media screen and (max-width: 1150px) {
-    .skills-container {
-        width: 85vw;
-        max-width: 90vw;
-    }
-    .skill {
-        margin: 1rem 1rem;
-    }
-  }
-
   @media screen and (max-width: 900px) {
     .Bio {
         flex-direction: column;
@@ -1003,8 +1018,9 @@ li:active {
     }
     #bio-img {
         margin-bottom: 3rem;
-        width: 288;
-        height: 288;
+        margin-right: 0;
+        width: 288px;
+        height: 288px;
     }
     .Bio-items {
         margin: 0;
@@ -1012,7 +1028,8 @@ li:active {
         align-items: center;
     }
     .Bio-items p {
-        width: 70vw;
+        width: 90vw;
+        font-size: 1.1em;
     }
     .resume-section {
         margin-top: 1rem;
@@ -1026,8 +1043,36 @@ li:active {
     }
     .Bio-Container {
         margin-bottom: 0rem;
+        height: auto;
+    }
+    .skills-container {
+        width: 95vw;
+        height: auto;
+        margin-top: 5rem;
+    }
+    .skill {
+        margin: 0.75rem;
+    }
+    .skill-icons {
+        font-size: 2.5em;
+    }
+    .Section-Container {
+        margin: 2rem 0;
+    }
+    .Section-Container {
+        height: auto;
+    }
+    #projects {
+        padding-top: 5rem;
+    }
+    .project-single-container {
+        margin-bottom: 5rem;
+    }
+    .section-line {
+        margin-bottom: 2rem;
     }
   }
+  
 
   @media screen and (max-width: 780px) {  
     .project-single-container {
@@ -1060,6 +1105,15 @@ li:active {
     .Sidebar-container {
         display: inherit;
     }
+    #theme-switch-icon {
+        display: none;
+    }
+    #sidebar-theme-switch {
+        display: inherit;
+    }
+    .sidebar-heading {
+        display: flex;
+    }
     .Navbar {
         height: 60px;
         display: none;
@@ -1086,7 +1140,7 @@ li:active {
     and (min-device-width: 375px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) {
-        html {
+        html, body {
             width: 100%;
         }
     }
