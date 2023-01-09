@@ -34,7 +34,7 @@ body {
     --go-top-src: url("../public/go-top-light.svg");
     --theme-switch-icon-src: url(../public/sun-small.png);
     --sidebar-theme-switch: url(../public/moon-small.png);
-    --sidebar-button-bg: #cfd0d3;
+    --sidebar-button-bg: #0c0c0c;
     }
 }
 
@@ -52,7 +52,7 @@ body.light-theme {
 --go-top-src: url("../public/go-top-dark.svg");
 --theme-switch-icon-src: url(../public/moon-small.png);
 --sidebar-theme-switch: url(../public/sun-small.png);
---sidebar-button-bg: #0c0c0c;
+--sidebar-button-bg: #cfd0d3;
 }
 
 @media (prefers-color-scheme: light) {
@@ -70,7 +70,7 @@ body {
     --go-top-src: url("../public/go-top-dark.svg");
     --theme-switch-icon-src: url(../public/moon-small.png);
     --sidebar-theme-switch: url(../public/sun-small.png);
-    --sidebar-button-bg: #0c0c0c;
+    --sidebar-button-bg: #cfd0d3;
     }
 }
 
@@ -88,7 +88,7 @@ body.dark-theme {
     --go-top-src: url("../public/go-top-light.svg");
     --theme-switch-icon-src: url(../public/sun-small.png);
     --sidebar-theme-switch: url(../public/moon-small.png);
-    --sidebar-button-bg: #cfd0d3;
+    --sidebar-button-bg: #0c0c0c;
 }
 
 /* Fonts */
@@ -256,29 +256,23 @@ li:active {
 }
 
 .sidebar-heading img {
-    margin-left: 2rem;
-    margin-right: 1rem;
+    margin: 1rem;
     cursor: pointer;
     width: 25px;
     height: 25px;
 }
 
 .Navbar-heading img:hover {
-    margin-left: 2rem;
     opacity: 0.5;
 }
 
 .sidebar-heading img:hover {
-    margin-left: 2rem;
     opacity: 0.5;
 }
 
-#theme-switch-icon {
-    content: var(--theme-switch-icon-src);
-}
-
+#theme-switch-icon,
 #sidebar-switch-icon {
-    content: var(--sidebar-theme-switch);
+    content: var(--theme-switch-icon-src);
 }
 
 /* ~~~~~~ SIDEBAR ~~~~~~ */
@@ -306,8 +300,8 @@ li:active {
     right: 0px;
     z-index: 1;
     border: none;
-    background-color: var(--sidebar-button-bg);
-    color: var(--bkg-color);
+    background-color: transparent;
+    color: var(--btn-color);
     font-size: 2.5em;
     display: flex;
     justify-content: center;
@@ -1121,9 +1115,12 @@ li:active {
     .left-of-nav {
         width: 100vw;
         height: 64.5px;
-        background-color: var(--btn-color);
+        background-color: var(--bkg-color);
         opacity: 0.95
       }
+    .resume-section a {
+        margin: 0 1rem;
+    }
   }
 
   @media screen and (max-width: 700px) {
