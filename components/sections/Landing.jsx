@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Landing() {
     return(
     <>
-        <div className='Landing-Page'>
+        <div className='Landing-Page' alt="landing page">
             <div className='Landing-box'>
                 <div className='Landing-Text'>
                     <h1>Bridger Brown</h1>
@@ -12,11 +12,12 @@ function Landing() {
                 </div>
                 <div className='landpages'>
                     <Image 
-                        src='/../public/wave-dark.jpg' 
+                        src={'/wave-dark.jpg'}
                         className="fade" 
                         id='land-bg'
                         width="4000"
                         height="2860"
+                        alt='Landing page swirl image'
                         />
                 </div>
             </div>

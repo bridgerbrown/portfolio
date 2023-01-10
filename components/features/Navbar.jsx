@@ -10,11 +10,11 @@ function Navbar(props) {
     };
     return(
     <>
-        <div className='Navs'>
+        <nav className='Navs'>
             <div className='left-of-nav'>
                 <div className='sidebar-heading'>
                     <Image 
-                        src='/../public/sun.png' 
+                        src={'/sun-small.png'}
                         alt='switch to dark theme'
                         onClick={props.themeChange}
                         id='sidebar-switch-icon'
@@ -25,6 +25,7 @@ function Navbar(props) {
             </div>
             <div className='Navbar'>
                 <div className='navbar-items'>
+                    <ul>
                         <a href="#bio">
                             <li>About</li>
                         </a>
@@ -36,9 +37,10 @@ function Navbar(props) {
                         <a href="#contact">
                             <li>Contact</li>
                         </a>
+                    </ul>
                     <div className='Navbar-heading'>
                         <Image 
-                            src='/../public/moon.png' 
+                            src={'/moon-small.png'} 
                             alt='switch to dark theme'
                             onClick={props.themeChange}
                             id='theme-switch-icon'
@@ -49,7 +51,7 @@ function Navbar(props) {
                 </div>
             </div>
             <Sidebar isOpen={sidebarOpen} toggleSidebar={handleViewSidebar} themeChange={props.themeChange}/>
-        </div>
+        </nav>
     </>
     )
 }  

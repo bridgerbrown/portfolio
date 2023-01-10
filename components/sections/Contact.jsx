@@ -11,13 +11,14 @@ function Contact() {
 
     return (
       <>
-        <div className="contact-container Section-container" id="contact">
+        <section className="contact-container Section-container" id="contact">
             <div className='section-line'>
               <Image 
                 src={"/star1.png"} 
                 className="swirls"
                 width={25}
                 height={25}
+                alt="swirl icon"
               />
               <h3 className='Section-Headers'>Contact</h3>
               <Image 
@@ -25,6 +26,7 @@ function Contact() {
                 className="swirls"
                 width={25}
                 height={25}
+                alt="swirl icon"
               />
             </div>
             <div className="contact-items">
@@ -60,7 +62,7 @@ function Contact() {
                     <button onClick={copyContact} id="copy-button">Copy Email</button>
                 </div>
             </div>
-        </div>
+        </section>
       </>
     )
 }

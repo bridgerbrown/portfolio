@@ -40,13 +40,14 @@ function About() {
 
   return(
     <>
-      <div className='Bio-Container' id="bio">
+      <section className='Bio-Container' id="bio">
           <div className='section-line'>
             <Image 
               src={"/star1.png"} 
               className="swirls"
               width={25}
               height={25}
+              alt="swirl icon"
               />
             <h3 className='Section-Headers'>About</h3>
             <Image 
@@ -54,12 +55,13 @@ function About() {
               className="swirls"
               width={25}
               height={25}
+              alt="swirl icon"
               />
           </div>
           <div className="Bio">  
               <Image 
                 src={"/cortona-headshot.png"}
-                alt="bridger headshot" 
+                alt="bridger headshot image" 
                 className='reveal-left' 
                 id='bio-img'
                 width={352}
@@ -113,7 +115,7 @@ function About() {
                   </div>
               </div> 
           </div>
-      </div>
+      </section>
     </>
   )
 }

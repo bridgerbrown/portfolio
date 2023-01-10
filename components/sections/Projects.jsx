@@ -7,13 +7,14 @@ import Image from 'next/image'
 function Projects() {
     return(
         <>
-            <div className='Section-Container' id="projects">
+            <section className='Section-Container' id="projects">
                 <div className='section-line'>
                 <Image 
                     src={"/star1.png"} 
                     className="swirls"
                     width={25}
                     height={25}
+                    alt="swirl icon"
                 />
                     <h3 className='Section-Headers'>Projects</h3>
                     <Image 
@@ -21,6 +22,7 @@ function Projects() {
                         className="swirls"
                         width={25}
                         height={25}
+                        alt="swirl icon"
                     />
                 </div>
                 <div className='Work-Container'>
@@ -31,7 +33,7 @@ function Projects() {
                 <div className='coming-soon'>
                     <h3>More coming soon...</h3>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

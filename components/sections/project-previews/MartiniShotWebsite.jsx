@@ -28,8 +28,8 @@ return(
                         In addition to managing the website, I am also the audio producer/editor and designed the Martini Shot logo.</p>
                 </div>
                 <div className='project-buttons'>
-                <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
-                    <button className='ReadMore'>Preview</button>
+                <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='ReadMore'>
+                    Preview
                 </a>
                 </div>    
             </div>

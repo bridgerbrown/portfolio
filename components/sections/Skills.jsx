@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Skills() {
     return(
-        <div className="skills-container Section-container">
+        <section className="skills-container Section-container">
             <div>
                 <div className='section-line'>
                     <Image 
@@ -11,6 +11,7 @@ function Skills() {
                         className="swirls"
                         width={25}
                         height={25}
+                        alt="swirl icon"
                     />
                     <h3 className='Section-Headers' id="skills-header">Skills</h3>
                     <Image 
@@ -18,6 +19,7 @@ function Skills() {
                         className="swirls"
                         width={25}
                         height={25}
+                        alt="swirl icon"
                     />
                 </div>
                 <p className="currently-learning">I am currently learning...
@@ -78,7 +80,7 @@ function Skills() {
                     <p>WORDPRESS</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

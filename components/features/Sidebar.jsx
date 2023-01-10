@@ -6,7 +6,7 @@ const Sidebar = props => {
 
   return (
     <>
-        <div className="Sidebar-container">
+        <nav className="Sidebar-container">
             <button onClick={props.toggleSidebar} className="sidebar-toggle">
             ☰
             </button>
@@ -23,7 +23,7 @@ const Sidebar = props => {
                     <li>Contact</li>
                 </a>
             </div>
-        </div>
+        </nav>
     </>
   );
 };

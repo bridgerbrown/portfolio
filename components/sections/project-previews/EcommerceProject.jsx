@@ -15,8 +15,10 @@ function EcommerceProject() {
                         />
                 </div>
                 <div className='Work-Details reveal-right'>
-                    <div className='project-text'>
-                    <h4>eCommerce app</h4>
+                <div className='project-text'>
+                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <h4>eCommerce app</h4>
+                    </a>
                     <p className='project-description'>
                         A demo eCommerce website with features such as a database of dynamically updating products, cart functionality, and email user authentication.
                         <br/>
@@ -26,11 +28,11 @@ function EcommerceProject() {
                     </p>
                     </div>
                     <div className='project-buttons'>
-                        <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
-                            <button className='ReadMore'>Preview</button>
+                        <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='ReadMore'>
+                            Preview
                         </a>
-                        <a href='https://github.com/bridgerbrown/ecommerce-basic' target="_blank" rel="noopener noreferrer">
-                            <button className='ReadMore'>Github</button>
+                        <a href='https://github.com/bridgerbrown/ecommerce-basic' target="_blank" rel="noopener noreferrer" className='ReadMore'>
+                            Github
                         </a>
                     </div>  
                 </div>
