@@ -25,19 +25,19 @@ function Navbar(props) {
             </div>
             <div className='Navbar'>
                 <div className='navbar-items'>
-                    <ul>
+                    <div className='navbar-list'>
                         <a href="#bio">
-                            <li>About</li>
+                            About
                         </a>
 
                         <a href="#projects">
-                            <li>Projects</li>
+                            Projects
                         </a>
 
                         <a href="#contact">
-                            <li>Contact</li>
+                            Contact
                         </a>
-                    </ul>
+                    </div>
                     <div className='Navbar-heading'>
                         <Image 
                             src={'/moon-small.png'} 

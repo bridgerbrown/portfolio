@@ -12,15 +12,13 @@ const Sidebar = props => {
             </button>
             <div className={sidebarClass}>
                 <a href="#bio">
-                    <li>About</li>
+                    About
                 </a>
-
                 <a href="#projects">
-                    <li>Projects</li>
+                    Projects
                 </a>
-
                 <a href="#contact">
-                    <li>Contact</li>
+                    Contact
                 </a>
             </div>
         </nav>
