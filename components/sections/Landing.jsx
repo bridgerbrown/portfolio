@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Landing() {
     return(
     <>
-        <div className='Landing-Page' alt="landing page">
+        <div className='Landing-Page'>
             <div className='Landing-box'>
                 <div className='Landing-Text'>
                     <h1>Bridger Brown</h1>
