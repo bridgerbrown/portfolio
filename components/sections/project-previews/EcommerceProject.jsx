@@ -6,17 +6,19 @@ function EcommerceProject() {
         <>
             <div className='project-single-container'>
                 <div className='project-img'>
-                    <Image 
-                        src={'/ecommerce-preview.png' }
-                        alt="ecommerce preview" 
-                        className='Work-Preview reveal-left'
-                        width={1280}
-                        height={960}
-                        />
+                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src={'/ecommerce-preview.jpg' }
+                            alt="ecommerce preview" 
+                            className='Work-Preview reveal-left'
+                            width={1280}
+                            height={960}
+                            />
+                    </a>
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
                         <h4>eCommerce app</h4>
                     </a>
                     <p className='project-description'>

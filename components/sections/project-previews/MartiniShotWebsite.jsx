@@ -18,7 +18,7 @@ return(
             </div>
             <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
+                    <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='project-title'>
                         <h4>Martini Shot Podcast Website</h4>
                     </a>
                     <p>A website for the podcast Martini Shot with writer and TV producer Rob Long (Cheers, Sullivan & Son).

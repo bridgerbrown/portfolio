@@ -6,17 +6,19 @@ function QuizProject() {
         <>
             <div className='project-single-container'>
                 <div className='project-img'>
-                    <Image 
-                        src={'/quizzical-preview.png'}
-                        alt="quiz project preview" 
-                        className='Work-Preview reveal-left'
-                        width={1280}
-                        height={960}
-                        />
+                    <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src={'/quizzical-preview.jpg'}
+                            alt="quiz project preview" 
+                            className='Work-Preview reveal-left'
+                            width={1280}
+                            height={960}
+                            />
+                    </a>
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
                         <h4>Quiz App</h4>
                     </a> 
                     <p className='project-description'>

@@ -620,6 +620,7 @@ a {
 .skill-icons {
     font-size: 3.3em;
     font-weight: 800;
+    letter-spacing: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -652,7 +653,7 @@ a {
 }
 
 
-/* ~~~~~~ WORK section ~~~~~~  */
+/* ~~~~~~ PROJECTS section ~~~~~~  */
 
 .project-single-container {
     display: flex;
@@ -681,6 +682,7 @@ a {
     align-items: center;
     flex-direction: column;
     padding-top: 2rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
 .Work-Details {
@@ -720,6 +722,8 @@ a {
     letter-spacing: 1.25px;
     text-decoration: none;
     text-transform: uppercase;
+    border-bottom: 0.5px solid var(--btn-color);
+    padding-bottom: 0.25rem;
 }
 
 .project-description span {
@@ -729,7 +733,7 @@ a {
 
 .project-text h4:hover {
     cursor: pointer;
-    color: white;
+    color: var(--nav-hover)
 }
 
 .ReadMore {
@@ -781,8 +785,6 @@ a {
     color: white;
     background-color: rgba(111, 110, 110, 0.855);
 }
-
-/* ~~~~~~ PROJECTS section ~~~~~~  */
 
 .Projects-Container {
     display: flex;
@@ -1070,10 +1072,6 @@ a {
     .section-line {
         margin-bottom: 2rem;
     }
-  }
-  
-
-  @media screen and (max-width: 780px) {  
     .project-single-container {
         flex-direction: column;
         justify-content: center;
@@ -1092,6 +1090,10 @@ a {
         flex-direction: column;
         justify-content: center;
     }
+  }
+  
+
+  @media screen and (max-width: 780px) {  
     .project-text {
         margin: 0;
     }
