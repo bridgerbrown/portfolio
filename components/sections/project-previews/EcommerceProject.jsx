@@ -6,7 +6,7 @@ function EcommerceProject() {
         <>
             <div className='project-single-container'>
                 <div className='project-img'>
-                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
                             src={'/ecommerce-preview.jpg' }
                             alt="ecommerce preview" 
@@ -18,7 +18,7 @@ function EcommerceProject() {
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
+                    <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
                         <h4>eCommerce app</h4>
                     </a>
                     <p className='project-description'>
@@ -30,7 +30,7 @@ function EcommerceProject() {
                     </p>
                     </div>
                     <div className='project-buttons'>
-                        <a href='https://ecommerce-paintings-qp6emzax8-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='ReadMore'>
+                        <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='ReadMore'>
                             Preview
                         </a>
                         <a href='https://github.com/bridgerbrown/ecommerce-basic' target="_blank" rel="noopener noreferrer" className='ReadMore'>
