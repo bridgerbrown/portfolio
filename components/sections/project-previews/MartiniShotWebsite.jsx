@@ -6,7 +6,7 @@ return(
     <>
         <div className='project-single-container'>
             <div className='project-img'>
-                <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={'/martini-shot-preview.jpg'}
                         alt="martini shot project preview" 
@@ -18,7 +18,7 @@ return(
             </div>
             <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='project-title'>
+                    <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='project-title'>
                         <h4>Martini Shot Podcast Website</h4>
                     </a>
                     <p>A website for the podcast Martini Shot with writer and TV producer Rob Long (Cheers, Sullivan & Son).
@@ -28,7 +28,7 @@ return(
                         In addition to managing the website, I am also the audio producer/editor and designed the Martini Shot logo.</p>
                 </div>
                 <div className='project-buttons'>
-                <a href='www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='ReadMore'>
+                <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='ReadMore'>
                     Preview
                 </a>
                 </div>    
