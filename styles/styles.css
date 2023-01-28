@@ -1237,9 +1237,6 @@ a {
     .resume-section a {
         margin: 0 1rem;
     }
-    .social-divider {
-        margin: 0;
-    }
   }
 
   @media screen and (max-width: 700px) {
@@ -1249,6 +1246,19 @@ a {
     }
     .Landing-Text h2 {
         font-size: 3.5vw;
+    }
+    .resume-section p {
+        font-size: 0.7rem;
+    }
+    .resume-section {
+        margin-right: 0;
+    }
+    .resume-section a {
+        margin: 0 0.4rem;
+    }
+    .resume-section img {
+        width: 35px;
+        height: 35px;
     }
   }
 

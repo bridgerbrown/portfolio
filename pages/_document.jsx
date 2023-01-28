@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang='en'>
         <Head>
             <title>Bridger Brown Dev</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
             <meta property="og:title" content="Bridger Brown Dev"/>
             <meta property="og:image" content={"/bbdev-meta.jpg"}/>
             <meta property="og:description" content="Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon."/>
