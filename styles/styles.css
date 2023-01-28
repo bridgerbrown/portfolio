@@ -1273,5 +1273,9 @@ a {
         body {
             position: relative;
         }
+        .coming-soon-bg {
+            position: relative;
+            top: -20px;
+        }
     }
 
