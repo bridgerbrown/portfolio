@@ -16,7 +16,7 @@ function PayCats() {
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://github.com/bridgerbrown/paycats' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title-coming-soon'>PayCats - Venmo/PayPal clone</h4>
                     </a>
                     <h3 className='coming-soon'>Coming Soon...</h3>
