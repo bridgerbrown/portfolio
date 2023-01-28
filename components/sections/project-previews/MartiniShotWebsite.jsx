@@ -18,8 +18,8 @@ return(
             </div>
             <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer" className='project-title'>
-                        <h4>Martini Shot Podcast Website</h4>
+                    <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
+                        <h4 className='project-title'>Martini Shot Podcast Website</h4>
                     </a>
                     <p>A website for the podcast Martini Shot with writer and TV producer Rob Long (Cheers, Sullivan & Son).
                         This was one of my first website projects and was built using Wordpress, HTML, and CSS.

@@ -521,13 +521,39 @@ a {
 
 .resume-section {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.resume-section a {
+    margin: 0 2rem;
+}
+
+.resume-section a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.resume-section a,
-.resume-section button {
-    margin: 0 2rem 0 0;
+.resume-section p {
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: serenity;
+    padding-top: 0.5rem;
+    padding-left: 0.11rem;
+    text-transform: uppercase;
+}
+
+.social-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
 }
 
 .resume-section img {
@@ -634,7 +660,9 @@ a {
 }
 
 .skill-icons p {
-    font-size: 0.25em;
+    font-size: 0.3em;
+    font-family: serenity;
+    font-weight: 300;
 }
 
 .skill {
@@ -673,8 +701,15 @@ a {
     border-radius: 5px;
 }
 
+.Work-Preview-coming-soon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .Work-Preview:hover {
-    mix-blend-mode:soft-light;
+    
 }
 
 .Work-Container {
@@ -711,7 +746,7 @@ a {
     margin-left: 4rem;
 }
 
-.project-text h4 {
+.project-title {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -726,9 +761,64 @@ a {
     padding-bottom: 0.25rem;
 }
 
+.project-title-coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.5em;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 0.5px solid var(--btn-color);
+    padding-bottom: 0.25rem; 
+}
+
+.coming-soon {
+    letter-spacing: 3px;
+    font-family: serenity;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0;
+    opacity: 1;
+    font-style: italic;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--btn-color), rgba(0, 0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 95%;
+    animation: animate 2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.coming-soon-bg {
+    position: relative;
+    top: -22px;
+    z-index: -1;
+    letter-spacing: 3px;
+    font-family: serenity;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0;
+    opacity: 0.4;
+    font-style: italic;
+    overflow: hidden;
+}
+
+@keyframes animate {
+0% {
+  background-position: -1800%;
+}
+100% {
+  background-position: 1800%;
+}
+}
+
 .project-description span {
-    font-weight: 900;
-    border-bottom: 0.5px solid black;
+    font-weight: 300;
+    border-bottom: 0.5px solid var(--btn-color);
 }
 
 .project-text h4:hover {
@@ -754,21 +844,34 @@ a {
     font-size: 1em;
 }
 
+.ReadMore-grayed {
+    width: 5.4rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-family: Stigfier;
+    font-size: 1em;
+    opacity: 0.4;
+}
+
 .ReadMore:hover {
     cursor: pointer;
     background-color: var(--btn-hover);
     color: var(--text-hover);
 }
 
+
 .project-buttons {
     display: flex;
-}
-
-.coming-soon h3 {
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0rem auto 12rem auto;
-    opacity: 0.8;
 }
 
 .project-programs {
@@ -1032,6 +1135,9 @@ a {
         width: 90vw;
         font-size: 1.1em;
     }
+    .resume-section p {
+        font-size: 0.85em;
+    }
     .resume-section {
         margin-top: 1rem;
         justify-content:center ;
@@ -1090,6 +1196,9 @@ a {
         flex-direction: column;
         justify-content: center;
     }
+    .resume-section a {
+        max-width: 5rem;
+    }
   }
   
 
@@ -1127,6 +1236,9 @@ a {
       }
     .resume-section a {
         margin: 0 1rem;
+    }
+    .social-divider {
+        margin: 0;
     }
   }
 

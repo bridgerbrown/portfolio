@@ -3,6 +3,7 @@ import EcommerceProject from '../sections/project-previews/EcommerceProject'
 import MartiniShotWebsite from '../sections/project-previews/MartiniShotWebsite'
 import QuizProject from '../sections/project-previews/QuizProject'
 import Image from 'next/image'
+import PayCats from './project-previews/Paycats'
 
 function Projects() {
     return(
@@ -26,12 +27,10 @@ function Projects() {
                     />
                 </div>
                 <div className='Work-Container'>
+                    <PayCats />
                     <EcommerceProject />
                     <QuizProject />
                     <MartiniShotWebsite />
-                </div>
-                <div className='coming-soon'>
-                    <h3>More coming soon...</h3>
                 </div>
             </section>
         </>

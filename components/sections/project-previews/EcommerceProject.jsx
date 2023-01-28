@@ -18,8 +18,8 @@ function EcommerceProject() {
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
-                        <h4>eCommerce app</h4>
+                    <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <h4 className='project-title'>eCommerce app</h4>
                     </a>
                     <p className='project-description'>
                         A demo eCommerce website with features such as a database of dynamically updating products, cart functionality, and email user authentication.

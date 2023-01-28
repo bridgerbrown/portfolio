@@ -92,6 +92,7 @@ function About() {
                         width={38}
                         height={38}
                         />
+                        <p>LinkedIn</p>
                     </a>
                     <a href='https://github.com/bridgerbrown' target="_blank" rel="noopener noreferrer" >
                       <Image 
@@ -101,6 +102,7 @@ function About() {
                         width={38}
                         height={38}
                         />
+                        <p>Github</p>
                     </a>
                     <a href='https://www.instagram.com/bridger.brown/' target="_blank" rel="noopener noreferrer" > 
                       <Image 
@@ -110,6 +112,17 @@ function About() {
                         width={38}
                         height={38}
                         />
+                        <p>Music</p>
+                    </a>
+                    <a href='https://www.instagram.com/bridger.design/' target="_blank" rel="noopener noreferrer" > 
+                      <Image 
+                        src={"/Instagram_black.png"} 
+                        alt="Instagram icon" 
+                        className='Social-Icons'
+                        width={38}
+                        height={38}
+                        />
+                        <p>Design</p>
                     </a>
                     {/* <button>Resume</button> */}
                   </div>

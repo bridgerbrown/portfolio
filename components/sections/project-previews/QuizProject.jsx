@@ -18,8 +18,8 @@ function QuizProject() {
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer" className='project-title'>
-                        <h4>Quiz App</h4>
+                    <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <h4 className='project-title'>Quiz App</h4>
                     </a> 
                     <p className='project-description'>
                         A trivia question game with multiple categories and difficulties, this <span>React</span> app fetches data from the <span>Open Trivia Database API</span>.
