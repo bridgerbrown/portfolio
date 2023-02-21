@@ -708,8 +708,14 @@ a {
     border-radius: 5px;
 }
 
-.Work-Preview:hover {
-    
+.project-subtitle{
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-family: serenity;
+    font-weight: 300;
 }
 
 .Work-Container {

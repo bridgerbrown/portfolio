@@ -21,6 +21,7 @@ function QuizProject() {
                     <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title'>Quiz App</h4>
                     </a> 
+                    <h3 className='project-subtitle'>SOLO-PROJECT</h3>
                     <p className='project-description'>
                         A trivia question game with multiple categories and difficulties, this <span>React</span> app fetches data from the <span>Open Trivia Database API</span>.
                         This project started out as a part of the Scrimba Front-End Developer Career Path but was fleshed out more on its own. 

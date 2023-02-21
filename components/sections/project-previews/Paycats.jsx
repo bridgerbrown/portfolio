@@ -19,10 +19,11 @@ function PayCats() {
                     <a href='https://github.com/bridgerbrown/paycats' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title-coming-soon'>PayCats - Venmo/PayPal clone</h4>
                     </a>
-                    <h3 className='coming-soon'>Coming Soon...</h3>
-                    <h3 className='coming-soon-bg'>Coming Soon...</h3>
+                    <h3 className='project-subtitle'>SOLO-PROJECT</h3>
+                    {/* <h3 className='coming-soon'>Coming Soon...</h3>
+                    <h3 className='coming-soon-bg'>Coming Soon...</h3> */}
                     <p className='project-description'>
-                        PayCats is a Venmo/Paypal clone with a database of cat users you can pay and request money from. Like Venmo,
+                        PayCats is a Venmo/Paypal clone with a database of cat users you can securely sign up, pay and request money from. Like Venmo,
                         you can track your balance, make requests to users, and interact with the history of transactions. Each cat user has a different personality
                         with unique possibilities of responses and comments to your requests! 
                         <br/>
@@ -34,9 +35,9 @@ function PayCats() {
                     </p>
                     </div>
                     <div className='project-buttons'>
-                        <button className='ReadMore-grayed'>
+                        <a href='https://paycats.vercel.app/' target="_blank" rel="noopener noreferrer" className='ReadMore'>
                             Preview
-                        </button>
+                        </a>
                         <a href='https://github.com/bridgerbrown/paycats' target="_blank" rel="noopener noreferrer" className='ReadMore'>
                             Github
                         </a>
