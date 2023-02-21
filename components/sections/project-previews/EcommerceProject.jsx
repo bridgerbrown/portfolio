@@ -9,7 +9,7 @@ function EcommerceProject() {
                     <a href='https://ecommerce-paintings-3pawgrsfp-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
                             src={'/ecommerce-preview.jpg' }
-                            alt="ecommerce preview" 
+                            alt="ecommerce paintings project preview" 
                             className='Work-Preview reveal-left'
                             width={1280}
                             height={960}

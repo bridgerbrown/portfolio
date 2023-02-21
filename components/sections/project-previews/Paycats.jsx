@@ -6,17 +6,19 @@ function PayCats() {
         <>
             <div className='project-single-container'>
                 <div className='project-img'>
+                    <a href='https://paycats.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
                             src={'/paycats-preview.jpg' }
-                            alt="ecommerce preview" 
-                            className='Work-Preview-coming-soon reveal-left'
+                            alt="paycats project preview" 
+                            className='Work-Preview reveal-left'
                             width={1280}
                             height={960}
                             />
+                    </a>
                 </div>
                 <div className='Work-Details reveal-right'>
                 <div className='project-text'>
-                    <a href='https://github.com/bridgerbrown/paycats' target="_blank" rel="noopener noreferrer">
+                    <a href='https://paycats.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title-coming-soon'>PayCats - Venmo/PayPal clone</h4>
                     </a>
                     <h3 className='project-subtitle'>SOLO-PROJECT</h3>

@@ -39,6 +39,14 @@ function Skills() {
                     <i class="devicon-react-original"></i>
                     <p>REACT</p>
                 </div>
+                <div className="skill">       
+                    <i class="devicon-typescript-original"></i>
+                    <p>TYPESCRIPT</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-nextjs-original"></i>
+                    <p>NEXT.JS</p>
+                </div>
                 <div className="skill">
                     <i class="devicon-html5-plain"></i>
                     <p>HTML</p>
@@ -48,20 +56,12 @@ function Skills() {
                     <p>CSS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-typescript-original"></i>
-                    <p>TYPESCRIPT</p>
-                </div>
-                <div className="skill">       
-                    <i class="devicon-nextjs-original"></i>
-                    <p>NEXT.JS</p>
+                    <i class="devicon-tailwindcss-plain"></i>
+                    <p>TAILWIND</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-jquery-plain"></i>
                     <p>JQUERY</p>
-                </div>
-                <div className="skill">       
-                    <i class="devicon-git-plain"></i>
-                    <p>GIT</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-photoshop-plain"></i>
@@ -72,8 +72,8 @@ function Skills() {
                     <p>ILLUSTRATOR</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-aftereffects-plain"></i>
-                    <p>AFTER EFFECTS</p>
+                    <i class="devicon-git-plain"></i>
+                    <p>GIT</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-wordpress-plain"></i>
