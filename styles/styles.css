@@ -1045,7 +1045,7 @@ a {
 /* ~~~~~~~~~~~~ Animations ~~~~~~~~~~~~  */
 
 .reveal-left {
-    position: relative;
+  position: relative;
   transform: translateX(-150px);
   opacity: 0;
   transition: 1s ease-in-out;  
@@ -1067,6 +1067,15 @@ a {
     transform: translateX(0);
     opacity: 1;
   }
+
+.fade-in{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.fade-in.active{
+    opacity: 1;
+}
 
 /* ~~~~~~~~~~~~ Back to top button ~~~~~~~~~~~~  */
 
@@ -1090,6 +1099,70 @@ a {
     opacity: 1;
 }
 
+
+/* Design */
+
+#design {
+    padding-top: 10rem;
+}
+
+.design-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.design-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.design-images{
+    width: 450px;
+    height: 450px;
+}
+
+.design-title{
+    font-weight: bold;
+    font-size: larger;
+    margin: 2rem 0 0.75rem 0;
+    padding: 0;
+    letter-spacing: 1px;
+    border-bottom: 0.5px solid var(--btn-color);
+}
+
+.design-project p {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+    font-family: serenity;
+    font-weight: 300;
+}
+
+.design-link{
+    width: 5.4rem;
+    height: 2.5rem;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-family: Stigfier;
+    font-size: 1em;
+}
+
+.design-link:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+    color: var(--text-hover);
+}
 
 /* ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~  */
   @font-face {
@@ -1116,6 +1189,9 @@ a {
 @media screen and (max-width: 1000px) {
   .goTop__text  {
     right: 1.5rem;
+    }
+    .design-section{
+        flex-direction: column;
     }
 }
 
@@ -1282,6 +1358,10 @@ a {
         .coming-soon-bg {
             position: relative;
             top: -23px;
+        }
+        .design-images{
+            width: 300px;
+            height: 300px;
         }
     }
 

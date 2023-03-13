@@ -6,6 +6,7 @@ import Navbar from '../components/features/Navbar'
 import Skills from "../components/sections/Skills";
 import Footer from '../components/sections/Footer'
 import Contact from "../components/sections/Contact"
+import Design from "../components/sections/Design";
 import { useState, useEffect, useRef } from "react";
 import GoTop from "../components/features/GoTop";
 
@@ -45,6 +46,7 @@ function Home() {
                 <About />
                 <Skills />
                 <Projects />
+                <Design />
                 <Contact />
                 <Footer />
             </div>            

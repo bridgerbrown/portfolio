@@ -34,6 +34,10 @@ function Navbar(props) {
                             Projects
                         </a>
 
+                        <a href="#design">
+                            Design
+                        </a>
+
                         <a href="#contact">
                             Contact
                         </a>
