@@ -54,7 +54,7 @@ function Design() {
                             />
                             <h3 className='design-title'>Martini Shot Podcast Logo</h3>
                             <p>February, 2022</p>
-                            <a href='https://theankler.com/s/martini-shot' target="_blank" rel="noopener noreferrer" className='design-link'>
+                            <a href='https://podcasts.apple.com/us/podcast/martini-shot/id1550168037' target="_blank" rel="noopener noreferrer" className='design-link'>
                                 Website    
                             </a>
                         </div>
@@ -64,7 +64,7 @@ function Design() {
                                 className="design-images"
                                 width={1000}
                                 height={942}
-                                alt="martini shot logo"
+                                alt="fruit within reach logo"
                             />
                             <h3 className='design-title'>Fruit Within Reach Logo</h3>
                             <p>February, 2022</p>
