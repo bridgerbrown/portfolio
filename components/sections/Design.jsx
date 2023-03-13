@@ -46,7 +46,7 @@ function Design() {
                     <div className='design-section'>
                         <div className='design-project fade-in'>
                             <Image 
-                                src={"/design/martinishot-logo.jpg"} 
+                                src={"/design/martinishot-logo.png"} 
                                 className="design-images"
                                 width={450}
                                 height={450}
