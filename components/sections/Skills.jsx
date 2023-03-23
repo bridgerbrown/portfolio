@@ -60,8 +60,8 @@ function Skills() {
                     <p>TAILWIND</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-jquery-plain"></i>
-                    <p>JQUERY</p>
+                    <i class="devicon-mongodb-plain"></i>
+                    <p>MONGODB</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-photoshop-plain"></i>
