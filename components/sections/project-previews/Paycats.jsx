@@ -30,7 +30,7 @@ function PayCats() {
                         with unique possibilities of responses and comments to your requests! 
                         <br/>
                         <br/>
-                        This project is being made using <span>TypeScript</span>
+                        This project was made using <span>TypeScript</span>
                         , <span>Tailwind CSS</span>, <span>React</span>
                         , <span>NextJS</span>, <span>Firestore</span> database
                         , and <span>Firebase</span> user authentication.
