@@ -4,6 +4,7 @@ import MartiniShotWebsite from '../sections/project-previews/MartiniShotWebsite'
 import QuizProject from '../sections/project-previews/QuizProject'
 import Image from 'next/image'
 import PayCats from './project-previews/Paycats'
+import RicochetProductionsProject from './project-previews/RicochetProductions'
 
 function Projects() {
     return(
@@ -27,6 +28,7 @@ function Projects() {
                     />
                 </div>
                 <div className='Work-Container'>
+                    <RicochetProductionsProject />
                     <PayCats />
                     <EcommerceProject />
                     <QuizProject />
