@@ -56,20 +56,28 @@ function Skills() {
                     <p>CSS</p>
                 </div>
                 <div className="skill">       
+                    <i class="devicon-jest-plain"></i>
+                    <p>JEST</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-nodejs-plain"></i>
+                    <p>NODEJS</p>
+                </div>
+                <div className="skill">       
                     <i class="devicon-tailwindcss-plain"></i>
-                    <p>TAILWIND</p>
+                    <p>TAILWIND CSS</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-mongodb-plain"></i>
                     <p>MONGODB</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-photoshop-plain"></i>
-                    <p>PHOTOSHOP</p>
+                    <i class="devicon-redux-plain"></i>
+                    <p>REDUX</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-illustrator-plain"></i>
-                    <p>ILLUSTRATOR</p>
+                    <i class="devicon-jquery-plain"></i>
+                    <p>JQUERY</p>
                 </div>
                 <div className="skill">       
                     <i class="devicon-git-plain"></i>
@@ -78,6 +86,14 @@ function Skills() {
                 <div className="skill">       
                     <i class="devicon-wordpress-plain"></i>
                     <p>WORDPRESS</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-photoshop-plain"></i>
+                    <p>PHOTOSHOP</p>
+                </div>
+                <div className="skill">       
+                    <i class="devicon-illustrator-plain"></i>
+                    <p>ILLUSTRATOR</p>
                 </div>
             </div>
         </section>
