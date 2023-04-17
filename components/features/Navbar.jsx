@@ -43,14 +43,14 @@ function Navbar(props) {
                         </a>
                     </div>
                     <div className='Navbar-heading'>
-                        <Image 
+                        {/* <Image 
                             src={'/moon-small.png'} 
                             alt='switch to dark theme'
                             onClick={props.themeChange}
                             id='theme-switch-icon'
                             width="25"
                             height="25"
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>

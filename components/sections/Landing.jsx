@@ -11,14 +11,6 @@ function Landing() {
                     <h2>Front-End Web Developer + Designer</h2>
                 </div>
                 <div className='landpages'>
-                    <Image 
-                        src={'/wave-dark.jpg'}
-                        className="fade" 
-                        id='land-bg'
-                        width="4000"
-                        height="2860"
-                        alt='Landing page swirl image'
-                        />
                 </div>
             </div>
         </div>
